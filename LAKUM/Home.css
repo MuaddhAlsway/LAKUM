@@ -1,0 +1,7814 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  margin: 0;
+ background: #f6f6eb;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+}
+@font-face {
+    font-family: "Atyp Kido TRIAL";
+    src: url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.eot");
+    src: url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5f890a4b455535ec148cc4cedc8a17f1.svg#Atyp Kido TRIAL")format("svg");
+}
+
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+  background: #f6f6eb;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo li {
+  list-style: none;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.logo p {
+  margin: 2px 0 0 0;
+  font-size: 14px;
+  color: #555;
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo img{
+  width: 100px;
+}
+.MenuHeader ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  color: #000;
+  padding: 0;
+}
+
+.MenuHeader li {
+  cursor: pointer;
+}
+.MenuHeader ul li a{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+/* ----- Hide icons by default ----- */
+.ri-menu-line,
+.ri-close-line {
+  display: none;
+}
+.HomeContainer img {
+  width: 100%;
+  height: auto;   /* keeps proportions, avoids distortion */
+  display: block; /* removes small white gaps from inline images */
+  max-width: 100%; /* prevents the image from overflowing */
+}
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 100px 100px;
+  flex-wrap: wrap; /* makes it wrap on small screens */
+}
+.LandingPageCover {
+  position: relative;
+  width: 100%;
+  height: 90.5vh; /* adjust height as needed */
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0.35)
+    ),
+    url('assest/img-4.png'); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  text-align: center;
+  color: #fff;
+}
+
+.titleLandingPage h4 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.buttonLandingPage button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonLandingPage a{
+  text-decoration: none;
+  color: #000;
+}
+.buttonLandingPage button:hover {
+  background-color: #ddd;
+}
+
+.textAboutUs {
+  max-width: 600px;
+}
+
+.titleAboutUs h4 {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 15px; /* spacing between title and paragraph */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.paragraphAboutUs p {
+width: 150%;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px; /* instead of <br><br> */
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imgAboutUs {
+  /* remove padding-top: 100px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgAboutUs img {
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+  
+  padding-top: 70px;
+}
+
+.banner {
+background-color: #f6f6eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+  gap: 40px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.bannerText {
+  flex: 1;
+  max-width: 50%;
+     font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bannerText h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bannerText p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bannerImage {
+  flex: 1;
+  max-width: 50%;
+}
+
+.bannerImage img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.numberCount {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px 100px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.numberCount div {
+  flex: 1;
+  min-width: 150px;
+}
+
+.numberCount a {
+  display: block;
+  font-size: 36px;
+     font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.numberCount p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #555;
+}
+
+.bannnerArtPaceGallary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px; /* top/bottom spacing */
+  background-color: #f6f6eb; /* optional, can remove or change */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bannnerArtPaceGallary .Higlight {
+  font-size: 48px; /* big highlight text */
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #8a8a8a;
+  line-height: 1.2;
+}
+
+.bannnerArtPaceGallary p:not(.Higlight) {
+  font-size: 24px; /* smaller subtitle */
+  color: #555;
+  line-height: 1.4;
+}
+.infiniteSlider {
+  width: 99vw;
+  overflow: hidden;
+  background: #f6f6eb;
+  padding: 20px 0;
+}
+
+.sliderTrack {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 0.1s linear;
+}
+
+.slide {
+  flex: 0 0 auto;
+  margin-right: 60px; /* spacing between logos */
+}
+
+.slide img {
+  height: 80px;
+  object-fit: contain;
+}
+.upcomingEvent {
+  padding: 20px 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleupcomingEvent h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.imgHeader1 {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.imgHeader1 img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  
+}
+
+/* Overlay Cover */
+.COVER {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left align content */
+  justify-content: flex-end; /* stick content toward bottom */
+  padding: 20px 40px;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* Date */
+.COVER .date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.COVER .date p {
+   font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Title */
+.COVER .titleCover {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+/* Time */
+.COVER .time {
+  color: rgb(248, 166, 58);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Date range */
+.COVER .dateCover {
+  color: rgb(150, 150, 150);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.upcomingEvent {
+  padding: 20px 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleupcomingEvent h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.imgHeader {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+.imgHeader img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Overlay Cover */
+.COVER {
+  position: absolute;
+  bottom: 0;
+  left: 400px; /* starts 400px from left side */
+  width: calc(100% - 400px); /* keep full width minus 400px */
+  height: 80%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* left align content */
+  justify-content: flex-end; /* stick content toward bottom */
+  padding: 20px 40px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.COVER .date p {
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Title */
+.COVER .titleCover {
+  font-size: 28px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 500;
+  margin: 5px 0;
+}
+
+/* Time */
+.COVER .time {
+  color: rgb(248, 166, 58);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 400;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Date range */
+.COVER .dateCover {
+  color: rgb(150, 150, 150);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Container */
+.upcomingContianer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: 200px;
+  align-items: center;
+}
+.upcomingContianer
+.upcomingContianer1{
+   margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  
+}
+.upcomingEventAboutUs1 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+ margin-top: 10px;
+  box-sizing: border-box;
+}
+.upcomingEventAboutUs {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 20px;
+}
+/* ====== Default (desktop 1024px+) ====== */
+.upcomingContianerAboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px auto;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.upcomingEventAboutUsPage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.ComingEventContainerAboutUsPage {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+}
+
+.imgHeaderAboutUsPage img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.COVERAboutUsPageLukum {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Left column */
+.COVERAboutUsPageLukum .leftColumnPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+.COVERAboutUsPageLukum .leftColumnPage .dateAboutUs p {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+.COVERAboutUsPageLukum .leftColumnPage .dateAboutUs .pnumber {
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+
+/* Right column */
+.COVERAboutUsPageLukum .rightColumnPage {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+}
+
+.COVERAboutUsPageLukum .rightColumnPage .titleCoverAboutUsLakum p {
+  font-size: 26px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.COVERAboutUsPageLukum .rightColumnPage .timeAboutUsLAKUM p {
+  color: rgb(248, 166, 58);
+  font-size: 18px;
+  margin: 0;
+}
+.COVERAboutUsPageLukum .rightColumnPage .dateCoverAboutUsLAKUM p {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  margin: 0;
+}
+.ComingEventContainerAboutUs {
+  position: relative;
+  width: 150px;
+  margin-left: 0px;
+}
+
+.ComingEventContainerAboutUs1 {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Image */
+.imgHeaderAboutUs img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+ 
+  display: block;
+  z-index: 1;
+}
+.imgHeaderAboutUs1 img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+ 
+  display: block;
+  z-index: 1;
+}
+
+.imgHeaderAboutUsPage img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+ 
+  display: block;
+  z-index: 1;
+}
+.imgHeaderAboutUsPage img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+ 
+  display: block;
+  z-index: 1;
+}
+/* Overlay */
+.COVERAboutUs {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  width: 70%;
+  height: 80%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  margin-left: 150px;
+
+}
+
+.COVERAboutUs1 {
+  position: absolute;
+  bottom: 0;
+  left:200px;
+  width: 100%;
+  height: 50%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  margin-left: 0px;
+
+}
+.COVERAboutUs1 .leftColumn {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding-left: 20px;
+}
+
+
+/* Left column: date only */
+.COVERAboutUs .leftColumn {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding-left: 20px;
+}
+
+
+.COVERAboutUs1 .dateAboutUs p {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  line-height: 20px;
+  padding-top: 10px;
+}
+.COVERAboutUs .dateAboutUs p {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  line-height: 20px;
+  padding-top: 10px;
+}
+.COVERAboutUs .dateAboutUs .pnumber {
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+  font-size: 50px;
+  margin: 0;
+  
+  line-height: 25px;
+  
+}
+/* Right column: stacked content */
+.COVERAboutUs .rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+/* Title */
+.COVERAboutUs .titleCoverAboutUs p {
+  font-size: 30px;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  font-weight: 300;
+  margin: 0;
+  padding-top: 0px;
+}
+
+/* Time */
+.COVERAboutUs .timeAboutUs p {
+  color: rgb(248, 166, 58);
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Date range */
+.COVERAboutUs .dateCoverAboutUs p {
+  color: rgb(150, 150, 150);
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Button */
+.buttonDiscoverMoreDriveYourSoulComing button {
+  padding: 10px 10px;
+  font-size: 13px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+  font-weight: 300;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+
+  cursor: pointer;
+ 
+  transition: background-color 0.3s ease;
+}
+.buttonDiscoverMoreDriveYourSoulComing  a{
+  text-decoration: none;
+  color: #000;
+}
+.buttonDiscoverMoreDriveYourSoul button {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+  font-weight: 300;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonDiscoverMoreDriveYourSoul button:hover {
+  background-color: #727272;
+  color: white;
+}
+
+
+.upcomingEvents {
+  display: flex;
+  flex-wrap: wrap;   /* allow items to wrap to next line */
+  gap: 0px;
+  justify-content: left;
+  margin: 0px;
+}
+
+.eventItem {
+  flex: 1 1 300px;       /* responsive width (min 300px, grow if space) */
+  max-width: 650px;      /* never exceed this */
+  text-align: center;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.imgWrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.dateBox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #fff;
+  color: #000;
+  padding: 30px 100px;
+  font-size: 25px;
+  text-align: center;
+      font-family: 'Atyp Kido TRIAL', sans-serif;
+
+  font-weight: 300;
+}
+
+.titleBox {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 300;
+
+}
+.buttonDiscoverMore {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.buttonDiscoverMore button{
+  padding: 15px 40px;
+  font-size:20px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+ font-weight: 300;
+    font-family: 'Atyp Kido TRIAL', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  margin-top: 30px;
+  background: transparent;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Atyp Kido TRIAL";   
+}
+
+.FOOTER1 {
+  margin-top: 30px;
+  background: transparent;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Atyp Kido TRIAL";
+  border-top: 1px solid #ccc;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.MenuFooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #000;
+}
+
+.MenuFooter a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.MenuFooter ul li:hover {
+  color: #ff9800;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9800;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.pastExhibit {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+/* All images responsive */
+.pastExhibit img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text under images */
+.pastExhibit p {
+  font-size: 30px;
+font-family: "Atyp Kido TRIAL";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Left and right images */
+.pastExhibit .imgleft,
+.pastExhibit .imgright {
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Middle image taller */
+.pastExhibit .imgMiddle {
+  flex: 1 1 350px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual image heights (desktop default) */
+.pastExhibit .imgleft img,
+.pastExhibit .imgright img {
+  height: 400px;
+}
+
+.pastExhibit .imgMiddle img {
+  height: 550px;
+}
+.bannerAhmedMatter {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;      
+       /* full width */
+  max-width: 1400px;     /* limit max width for large screens */
+  height: 400px;          /* allow height to adjust */
+  margin: auto;
+  margin-top: 50px;
+  gap: 20px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.bannerleftside {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 50px;
+  margin-top: 120px; /* remove large fixed margin */
+}
+
+.bannerleftside .date p {
+  font-size: 20px;
+  margin: 0;
+font-family: "Atyp Kido TRIAL";
+  color: #fff;
+}
+
+.bannerleftside .name h2 {
+  font-size: 45px;
+font-family: "Atyp Kido TRIAL";
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+
+.bannerleftside .year p {
+  font-size: 35px;
+font-family: "Atyp Kido TRIAL";
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+
+.bannerrightside {
+  flex: 1 1 400px;
+  height: 400px;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.driveyoursoul {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Titles and highlight text */
+.driveyoursoul .titledriveyoursoul h4 {
+font-family: "Atyp Kido TRIAL";
+font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  color: #6e6e6e;
+  margin: 0;
+}
+
+.driveyoursoul .higlightdriveyoursoul p {
+  font-family: "Atyp Kido TRIAL";
+    font-weight: 400;
+  font-size: 30px;
+    color: #6e6e6e;
+  margin: auto;
+}
+
+/* Button */
+.buttonDiscoverMoreDriveYourSoul button {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+    color: #6e6e6e;
+  font-weight: 300;
+font-family: "Atyp Kido TRIAL";
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonDiscoverMoreDriveYourSoul  a{
+ text-decoration: none;
+   color: black;
+}
+.buttonDiscoverMoreDriveYourSoul button:hover {
+  background-color: #727272;
+  color: white;
+}
+.upComingExhibitions .line {
+  width: 80%;
+  border-top: solid 0.5px #d1d1d1;
+  margin: 10px auto;
+}
+
+/* Section title */
+.upComingExhibitions .titleExhibitions h4 {
+font-family: "Atyp Kido TRIAL";
+  font-weight: 300;
+  margin-left: 180px;
+}
+
+/* Banner container */
+.bannerDrivenYourSoul {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #edecdf;
+  gap: 80px;
+  flex-direction: row; /* wrap on smaller screens */
+  
+}
+
+/* Left side image */
+.bannerleftsideDrivenYourSoul {
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 500px;
+;
+
+}
+
+/* Right side text */
+.bannerrightsideDrivenYourSoul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+  padding: 20px;
+}
+
+/* Date */
+.bannerrightsideDrivenYourSoul .datebanner p {
+  font-size:30px;
+  margin: 0;
+font-family: "Atyp Kido TRIAL";  font-weight: 300;
+}
+
+/* Name */
+.bannerrightsideDrivenYourSoul .namebanner h2 {
+  font-size: 60px;
+  margin: 0;
+font-family: "Atyp Kido TRIAL";  font-weight: 300;
+}
+
+/* Year */
+.bannerrightsideDrivenYourSoul .yearbanner p {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Paragraph */
+.bannerrightsideDrivenYourSoul .paragraphbanner p {
+  font-size: 60px;
+  line-height: 1.3;
+  color: #333;
+font-family: "Atyp Kido TRIAL";  font-weight: 300;
+  max-width: 800px;
+}
+.buttonDiscoverMoreDriveYourSoulCoverBanner button {
+  padding: 20px 40px;
+  font-size: 18px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+  font-weight: 300;
+font-family: "Atyp Kido TRIAL";  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonDiscoverMoreDriveYourSoulCoverBanner a {
+ text-decoration: none;
+ color: #000;
+}
+
+.buttonDiscoverMoreDriveYourSoulCoverBanner button:hover {
+  background-color: #727272;
+  color: white;
+}
+/* Button */
+.buttonDiscoverMoreDriveYourSoulCover button {
+  padding: 10px 0px;
+  font-size: 15px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+  font-weight: 300;
+font-family: "Atyp Kido TRIAL";  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonDiscoverMoreDriveYourSoulCover a {
+ text-decoration: none;
+ color: #000;
+}
+
+.buttonDiscoverMoreDriveYourSoul button:hover {
+  background-color: #727272;
+  color: white;
+}
+.ContainerYourown {
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url(assest/img-4.png);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* flex for centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.titleYourown h4 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.HiglihtAhmedMatter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.HiglihtAhmedMatter h4 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #8a8a8a;
+font-family: "Atyp Kido TRIAL";
+  margin: 10px 0;
+}
+
+.HiglihtAhmedMatter h4 span {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.HiglihtAhmedMatter button {
+  font-size: 20px;
+  padding: 15px 25px;
+  background: transparent;
+  border: 1px solid #8a8a8a;
+  color: #969696;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.HiglihtAhmedMatter a{
+  text-decoration: none;
+  color: #000;
+}
+.HiglihtAhmedMatter button:hover {
+  background: #8a8a8a;
+  color: #fff;
+}
+.buttonDiscoverMoreYourown button {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border: 1px solid #a8a8a0;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonDiscoverMoreYourown button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.footer-logo img{
+  width: 100px;
+}
+.ahmedmatter {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  height: 50vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  /* prevent overflow on small screens */
+}
+
+/* Dark overlay */
+.ahmedmatter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: 1;
+}
+
+/* Text above overlay */
+.dateAhmedmaater,
+.nameAhmedmatter,
+.yearahmedmatter {
+  position: relative;
+  z-index: 2;
+  
+  margin: 5px 0;
+}
+
+.dateAhmedmaater p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.nameAhmedmatter p {
+  font-size: 80px;
+  margin: 0;
+}
+
+.yearahmedmatter p {
+  font-size: 30px;
+  margin: 0;
+}
+.Space {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 0px;
+}
+
+.Space::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.nameSpace {
+  position: relative;
+  z-index: 2;
+  margin: 5px 0;
+}
+
+.nameSpace p {
+  font-size: 50px;
+  margin: 0;
+}
+
+.nameSpace p span {
+  font-weight: 600;
+}
+
+/* Collection row */
+.CollectionSpace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;       /* المسافة بين العناصر */
+  padding: 20px 0; /* padding أعلى وأسفل */
+  position: relative;
+  z-index: 2;
+}
+
+.CollectionSpace p {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  padding: 8px 15px;
+ 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+
+.SpaceVENUMContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 10%; /* use percentage instead of 200px */
+}
+
+.titleSpaceVenum {
+  width: 100%;
+  text-align: left;
+}
+
+.titleSpaceVenum h4 {
+  font-size: 36px;
+
+  font-weight: 600;
+  margin-bottom: 20px;
+font-family: "Atyp Kido TRIAL";
+  color: #000;
+}
+
+.SpaceVENUMContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* allow wrap on small screens */
+}
+
+.LeftText {
+  flex: 1;
+  min-width: 250px;
+}
+
+.LeftText p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  color: #333;
+font-family: "Atyp Kido TRIAL";
+}
+
+.imgRightSpaceVenum {
+  flex: 1;
+  min-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgRightSpaceVenum img {
+  width: 60%; /* scale down to container width */
+  height: 50%;    /* maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* optional: crop if needed */
+}
+
+.ahmedHiglight {
+  max-width: 800px;        
+  margin: 100px auto;        
+  text-align: center;       
+font-family: "Atyp Kido TRIAL";
+    font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;         
+  padding: 0 20px;          
+  color: #333;
+}
+
+.EXHIBITIONPREVIUSCONTAINER h4{
+  font-size: 20px;
+  
+}
+.ContainerSlide{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.ContainerSlide1{
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+
+}
+  .slider-container1 {
+      width: 100%;
+      max-width: 1525px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider-container {
+      width: 90%;
+      max-width: 1200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      
+      gap: 20px;
+      transition: transform 0.3s ease;
+      will-change: transform;
+    }
+
+    .card {
+      flex: 0 0 calc(33.33% - 13.3px); /* 3 cards visible with gap */
+      height: 350px;
+      background: #333;
+     
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* Navigation buttons */
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background: rgba(0,0,0,0.6);
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+    }
+    .nav.prev { left: 15px; }
+    .nav.next { right: 15px; }
+/* Base desktop styles (already provided) */
+.LukumContiner {
+  margin-top: 150px;
+}
+
+.LukumContiner .title h4 {
+  font-size: 30px;
+  font-family: "Atyp Kido TRIAL", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 100px;
+}
+
+/* ===== Gallery Section ===== */
+.pastExhibitLukum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center; /* Centers all image groups */
+  align-items: flex-start; /* Aligns items neatly at the top */
+}
+
+/* ===== Image Groups ===== */
+.pastExhibitLukum .imgleft,
+.pastExhibitLukum .imgright,
+.pastExhibitLukum .imgMiddle {
+  flex: 1 1 350px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* aligns text left inside */
+}
+
+/* ===== Image Styling ===== */
+.pastExhibitLukum img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px; /* optional for smoother edges */
+}
+
+/* ===== Paragraph Styling ===== */
+.pastExhibitLukum p,
+.pastExhibitLukum .imgMiddle p {
+  font-size: 30px;
+  font-family: "Atyp Kido TRIAL", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* ---------------- Container ---------------- */
+.ComingEventContainerLAKUM {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+/* Image Header */
+.imgHeaderLakum {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.imgHeaderLakum img {
+  width: 100%;
+  height: 800px; /* desktop height */
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay Cover */
+.COVERLAKUM {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 30%;
+  height: 100%;
+  background: rgba(233, 235, 217, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+  padding: 20px;
+ 
+  text-align: left;
+}
+
+.COVERLAKUM .titleCOVERLAKUM p {
+  font-size: 65px;
+  max-width: 300px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: auto;
+  margin-left: 30px;
+}
+
+.COVERLAKUM .date p {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+
+.COVERLAKUM .paragraphCOVERLAKUM p {
+  font-size: 25px;
+  line-height: 1.4;
+  color: #897272;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+/* Button at bottom-left */
+.buttonDiscoverMoreLAKUMLEFT {
+  position: absolute; /* relative to image */
+  bottom: 80px;
+  left: 20px;
+  width: 300px;
+  z-index: 10;
+}
+
+.buttonDiscoverMoreLAKUMLEFT button {
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 30px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonDiscoverMore a{
+  text-decoration: none;
+  
+}
+.buttonDiscoverMoreLAKUMLEFT button:hover {
+  background-color: #333;
+}
+/* Container */
+.previousEventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 99%;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+/* Title */
+.titlePreviousEventWrapper {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.titlePreviousEventWrapper h4 {
+  text-align: left;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: bold;
+  margin: 0;
+}
+
+.hrLineContainer {
+  flex-grow: 1;
+}
+
+.hrLineContainer hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #000;
+  margin: 0;
+}
+
+/* Columns */
+.PhotoEventColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Landing Page */
+.LandingPageCover {
+  height: 100vh;
+  width: 100%;
+}
+
+.titleLandingPage h4 {
+  font-size: 70px;
+  font-family: "Atyp Kido TRIAL";
+}
+
+.buttonLandingPage button {
+  font-size: 30px;
+  font-family: "Atyp Kido TRIAL";
+  padding: 20px 50px;
+}
+
+/* Rows */
+.PhotoEventRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.PhotoEventRow img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow11 img {
+  width: 100%;
+  max-width: 450px;
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow111 img {
+  width: 100%;
+  max-width: 450px;
+  height: 500px;
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow1 img {
+  width: 450px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 400px;
+}
+
+.PhotoEventRow2 img {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  max-width: 450px;
+  height: 360px;
+}
+
+.PhotoEventRow222 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 400px;
+}
+
+.PhotoEventRow222 img {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  max-width: 450px;
+  height: 330px;
+}
+
+.PhotoEventRow222 p {
+  position: relative;
+  top: 75px;
+  left: 50px;
+  width: 100%;
+}
+
+.PhotoEventRow33 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: -45px;
+}
+
+.PhotoEventRow33 img {
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow22 p,
+.PhotoEventRow2 p {
+  position: relative;
+  top: 75px;
+  width: 100%;
+}
+.VideoContainer {
+  width: 100%;
+  height: 60vh; /* يمكنك تعديلها حسب الحاجة */
+  overflow: hidden;
+  position: relative;
+}
+
+.VideoContainer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يغطي الحاوية مع المحافظة على نسبة العرض والارتفاع */
+  display: block;
+}
+
+.PhotoEventRow p {
+  margin-top: 8px;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  color: #333;
+  text-align: left;
+  width: 100%;
+  font-size: 30px;
+}
+
+.PhotoEventRow span {
+  font-weight: 500;
+}
+
+
+/* -------------------- PHOTO GRID -------------------- */
+.PhotoEventColumn {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* default 1 item per row */
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.PhotoEventRow,
+.PhotoEventRowLong,
+.PhotoEventRowShort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.PhotoEventRow1 img {
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  justify-content: flex-end; /* push content (image) to bottom */
+
+  transition: transform 0.3s ease;
+}
+
+.PhotoEventRow img,
+.PhotoEventRowLong img,
+.PhotoEventRowShort img {
+  width: 100%;
+
+  height: auto;
+}
+
+.PhotoEventRow p,
+.PhotoEventRowLong p,
+.PhotoEventRowShort p {
+  margin-top: 8px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.PhotoEventRow p{
+  text-align: left;
+  font-size: 30px;
+}
+.buttonDiscoverMoreLAKUM button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 1px solid #727272;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.titlePrevoiusEventContainer{
+  display: flex;
+  flex-direction: column;
+}
+.titlePreviousEventContainer h4{
+  font-size: 30px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 400;
+  text-align: left;
+  padding-top: 100px;
+  margin-top: 10px;
+  margin-left: 240px;
+  margin-bottom: -30px;
+}
+.hrLine{
+  margin-left: 300px;
+}
+.hrLine hr{
+  
+  width: 60%;
+  background: black;
+  border-top: solid 0.5px #d1d1d1;
+  margin: 10px auto;
+}
+.PhotoEventColumn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0px;
+  padding-left: 40px;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Keep your image sizes unchanged */
+.PhotoEventRowLong img {
+  width: 300px;
+  height: 300px;
+}
+.PhotoEventRow img {
+  width: 500px;
+  height: 400px;
+}
+.PhotoEventRowShort img {
+  width: 250px;
+  height: 250px;
+}
+.ColumnContainer{
+  margin-top: 50px;
+}
+/* Paragraph + arrow flex */
+.PhotoEventColumn p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between text and arrow */
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Arrow styling */
+.PhotoEventColumn i {
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 5px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Default (desktop/laptop large screens) */
+.ExploreCoverLakum {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* hero look */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 0;
+}
+
+.CoverImageLakum h4 {
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Atyp Kido TRIAL";
+}
+
+.CoverImage button {
+  padding: 20px 50px;
+  font-size: 30px;
+  border: 1px solid #a8a8a0;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* Calendar Container */
+/* Calendar Container */
+.calendarContainer {
+  display: flex;
+  gap: 30px;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Sidebar */
+.monthsSidebar {
+  flex: 0 0 150px;
+  background: #f7f7f7;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+.monthsSidebar ul {
+  list-style: none;
+}
+.monthsSidebar li {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: all 0.3s;
+  border-radius: 0 10px 10px 0;
+}
+.monthsSidebar li:hover,
+.monthsSidebar li.active {
+  border-left: 3px solid #444;
+  background-color: #fff5e6;
+  color: #999;
+}
+
+/* Events List as 2 Columns */
+.eventsList {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 0px;                             /* space between items */
+  justify-items: center;                  /* center items horizontally */
+  align-items: start;
+  max-height: auto;    /* limit height to 2 rows (adjust 350px per item) */
+  overflow: hidden;                       /* hide extra events beyond 2 rows */
+}
+
+/* Event Item */
+.eventItem {
+  display: none;          /* hide by default, show with JS */
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.eventItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* Image Wrapper */
+.imgWrapperCalender {
+  position: relative;
+  width: 100%;
+}
+
+.imgWrapperCalender img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.eventItem:hover .imgWrapperCalender img {
+  transform: scale(1.05);
+}
+
+/* Date Box */
+.dateBoxCalender {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #999;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* Title Box */
+.titleBox {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+/* Upcoming Events */
+.upcomingEventCalender {
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imgHeader1Calender {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.imgHeader1Calender img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+.imgHeader1Calender:hover img {
+  transform: scale(1.03);
+}
+
+.COVERCalender {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  border-radius: 0 0 15px 0;
+}
+
+.COVERCalender .dateCalender p {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #a8a8a0;
+}
+
+.COVERCalender .titleCalender {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.COVERCalender .timeCalender {
+  font-size: 16px;
+  color: #999;
+}
+
+.COVERCalender .dateCoverCalender {
+  font-size: 14px;
+  color: #999;
+}
+
+.buttonDiscoverMoreCalender button {
+  padding: 8px 25px;
+  font-size: 14px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.buttonDiscoverMoreCalender button:hover {
+  background-color: #555;
+}
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* === Icon inside input === */
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+
+/* Icon inside fields */
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%); /* perfect vertical center */
+  color: #999;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+/* Input + Textarea */
+.input-icon input,
+.input-icon textarea {
+  width: 100%;
+  padding: 12px 12px 12px 38px; /* leave space for icon on left */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+  resize: none;
+  box-sizing: border-box;
+  line-height: 1.4; /* fix text alignment */
+}
+
+/* Textarea specific */
+.input-icon textarea {
+  min-height: 120px;       /* adjust height */
+  display: block;
+}
+/* Submit button */
+.ButtonFormRow {
+  width: 100%;
+  padding: 14px;
+  background-color: #969696;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #727272;
+}
+#generic_price_table {
+  background-color: #f0eded;
+  padding: 60px 200px; /* left and right space */
+  box-sizing: border-box;
+}
+
+.price-heading {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.price-heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #444;
+}
+
+/* Flex container */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Top row: 3 columns */
+.top-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Bottom row: 2 columns */
+.bottom-row {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Cards */
+.generic_content {
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Widths */
+.top-row .generic_content {
+  width: 32%;
+}
+.bottom-row .generic_content {
+  width: 48%;
+}
+
+.generic_head_price {
+  background-color: #f6f6f6;
+  padding: 60px 20px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.generic_head_content .head_bg {
+  border-style: solid;
+  border-width: 50px 20px 20px 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  border-color: #e4e4e4 transparent transparent #e4e4e4;
+}
+
+.generic_head_content .head span {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #525252;
+  position: relative;
+  z-index: 1;
+}
+
+.generic_price_tag .price {
+  display: block;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-size: 26px;
+  font-weight: 700;
+  margin-top: 12px;
+  color: #414141;
+}
+
+.generic_feature_list {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.generic_feature_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.generic_feature_list ul li {
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-size: 16px;
+  padding: 10px 0;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.generic_feature_list ul li:hover {
+  background-color: #E4E4E4;
+  border-left: 5px solid #aaa;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.generic_price_btn {
+  margin: 20px 0 32px;
+}
+
+.generic_price_btn a {
+  border: 1px solid #333;
+  color: #555;
+  border-radius: 50px;
+  display: inline-block;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-size: 15px;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.generic_content:hover .generic_price_btn a {
+  background-color: #525252;
+  color: #fff;
+}
+.generic_img {
+  width: 100%;
+  height: 200px; /* adjust size */
+  overflow: hidden;
+}
+.currency-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.price-img {
+  width: 40px;   /* adjust size */
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 10px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.generic_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image proportion while filling */
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .calendarContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .monthsSidebar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .monthsSidebar ul {
+    display: flex;
+    gap: 15px;
+  }
+  .eventsList {
+    width: 100%;
+  }
+  .COVERCalender {
+    width: 80%;
+    height: auto;
+    padding: 15px 20px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 1366px) {
+  .pastExhibitLukum {
+    gap: 50px; /* smaller gap on medium laptops */
+  }
+
+  .pastExhibitLukum img {
+    height: 350px; /* reduce image height */
+  }
+
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 24px; /* scale down text */
+  }
+}
+/* 📱 Mobile (iPhone 375px and similar) */
+@media (max-width: 480px) {
+  .bannerAhmedContainer {
+    flex-direction: column; /* stack text above image */
+    height: auto; /* allow content height */
+  }
+
+  .banner-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner-text h2 {
+    font-size: 28px;
+  }
+
+  .banner-text .year {
+    font-size: 28px;
+  }
+
+  .banner-text .date {
+    font-size: 16px;
+  }
+
+  .banner-image {
+    height: 250px; /* fixed height for image on mobile */
+  }
+ .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 18px;
+  }
+
+ .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 14px;
+  }
+
+.driveyoursoul  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+    .pastExhibit {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .pastExhibit p {
+    font-size: 18px;
+  }
+
+  .pastExhibit .imgleft img,
+  .pastExhibit .imgright img,
+  .pastExhibit .imgMiddle img {
+    height: auto; /* natural image height */
+    max-height: 250px;
+  }
+.bannerAhmedContainer {
+    flex-direction: column; /* stack vertically */
+    height: auto;
+  }
+  .banner-text {
+    padding: 20px;
+    text-align: center;
+  }
+  .banner-text .date {
+    font-size: 18px;
+  }
+  .banner-text h2 {
+    font-size: 28px;
+  }
+  .banner-text .year {
+    font-size: 28px;
+  }
+  .banner-image {
+    width: 100%;
+    height: 200px; /* adjust as needed */
+  }
+   .bannerrightsideDrivenYourSoul {
+    width: 90%;
+    padding: 15px;
+    gap: 8px;
+    text-align: center;
+  }
+ 
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 16px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 22px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 16px;
+  }
+
+  .bannerrightsideDrivenYourSoul .paragraphbanner p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+   .upcomingContianer {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+  .upcomingContianer1 {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+  .upcomingEventAboutUs {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+ .upcomingEventAboutUs1 {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+
+  .imgHeaderAboutUs {
+    width: 100%;
+    position: relative;
+  }
+  .imgHeaderAboutUsPage {
+    width: 100%;
+    position: relative;
+  }
+ .imgHeaderAboutUsPage img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+  .imgHeaderAboutUs img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+  }
+
+  .COVERAboutUs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    padding: 15px;
+  
+  }
+
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 20px;
+  }
+
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 18px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 14px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+   .imgHeaderAboutUs img {
+    width: 100%;
+    height: auto;
+  }
+    .imgHeaderAboutUs1 img {
+    width: 100%;
+    height: auto;
+  }
+  .COVERAboutUs {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    padding: 15px;
+    
+  }
+  .COVERAboutUs .leftColumn,
+  .COVERAboutUs .rightColumn {
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+  }
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 28px;
+  }
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 20px;
+  }
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 14px;
+  }
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+  .buttonDiscoverMoreDriveYourSoul button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+   .footer-logo img {
+    width: 70px;
+  }
+
+  .MenuFooter ul {
+    gap: 5px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+  }
+  .upcomingEventAboutUsPage { width: 90%; }
+  .titleCoverAboutUsLakum p { font-size: 22px; }
+  .pnumber { font-size: 40px; }
+
+   .price-heading h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .flex-container {
+    gap: 30px; /* reduce gap */
+  }
+
+  /* Top row: stack vertically */
+  .top-row, .bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .top-row .generic_content,
+  .bottom-row .generic_content {
+    width: 100%; /* full width on mobile */
+  }
+
+  .generic_head_price {
+    padding: 40px 15px 15px;
+  }
+
+  .generic_head_content .head span {
+    font-size: 18px;
+  }
+
+  .generic_price_tag .price {
+    font-size: 20px;
+  }
+
+  .generic_feature_list ul li {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .generic_price_btn a {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .generic_img {
+    height: 180px;
+  }
+
+  .price-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .currency-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+    .contact-form {
+    max-width: 95%;       /* almost full width */
+    margin: 30px auto;    /* reduce top/bottom spacing */
+    padding: 20px;        /* reduce padding */
+  }
+
+  .form-row {
+    flex-direction: column; /* stack inputs vertically */
+    gap: 15px;              /* smaller gap */
+  }
+
+  .form-group {
+    flex: 1 1 100%;         /* full width */
+    margin-bottom: 12px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 10px 10px 10px 36px; /* adjust padding for icon */
+    font-size: 13px;               /* smaller text */
+  }
+
+  .input-icon i {
+    font-size: 14px;               /* slightly smaller icon */
+    left: 10px;
+  }
+
+  .input-icon textarea {
+    min-height: 100px;            /* smaller textarea */
+  }
+
+  .ButtonFormRow {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 1920px) and (min-width: 1367px) {
+  .bannerDrivenYourSoul {
+    height: 500px;
+    gap: 60px;
+  }
+  .bannerleftsideDrivenYourSoul {
+    height: 500px;
+  }
+  
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .bannerDrivenYourSoul {
+    flex-direction: row;
+    height: auto;
+    gap: 20px;
+  }
+  .bannerleftsideDrivenYourSoul,
+  .bannerrightsideDrivenYourSoul {
+    width: 100%;
+  }
+  .bannerleftsideDrivenYourSoul {
+    height: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  
+   .ri-menu-line {
+    display: block;
+    font-size: 26px;
+  }
+
+  .ri-close-line {
+    display: none;
+    font-size: 26px;
+  }
+
+  .MenuHeader ul {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    background: #f6f6ebaf;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    padding: 25px 0;
+    display: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .MenuHeader ul.active {
+    display: flex;
+  }
+
+  .MenuHeader ul li {
+    margin: 12px 0;
+  }
+
+  .MenuHeader ul li a {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 130px;
+  }
+
+  .headerContainer {
+    padding: 15px 20px;
+  }
+  .calendarContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .monthsSidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+.logo img{
+  width: 100px;
+}
+  .monthsSidebar li {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  .monthsSidebar li.active {
+    border-bottom: 2px solid #000;
+  }
+
+  .imgWrapperCalender img {
+    width: 80%;
+  }
+   .bannerAhmedContainer {
+    flex-direction: column; /* stack for smaller tablets */
+    height: auto;
+  }
+
+  .banner-text {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .banner-text h2 {
+    font-size: 36px;
+  }
+
+  .banner-text .year {
+    font-size: 32px;
+  }
+
+  .banner-text .date {
+    font-size: 20px;
+  }
+
+  .banner-image {
+    height: 350px;
+  }
+   .pastExhibit {
+    gap: 30px;
+    padding: 60px 20px;
+  }
+
+  .pastExhibit p {
+    font-size: 22px;
+  }
+
+  .pastExhibit .imgleft,
+  .pastExhibit .imgright,
+  .pastExhibit .imgMiddle {
+    flex: 1 1 calc(50% - 30px); /* 2 columns */
+    max-width: none;
+  }
+
+  .pastExhibit .imgleft img,
+  .pastExhibit .imgright img,
+  .pastExhibit .imgMiddle img {
+    height: auto;
+    max-height: 350px;
+  }
+   .bannerAhmedContainer {
+    flex-direction: row;
+    height: 300px;
+  }
+  .banner-text {
+    padding: 30px;
+  }
+  .banner-text .date {
+    font-size: 20px;
+  }
+  .banner-text h2 {
+    font-size: 40px;
+  }
+  .banner-text .year {
+    font-size: 40px;
+  }
+   .bannerrightsideDrivenYourSoul {
+    width: 90%;
+    padding: 15px;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 16px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 22px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 16px;
+  }
+
+  .bannerrightsideDrivenYourSoul .paragraphbanner p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+   .imgHeaderAboutUs img {
+    width: 250px;
+    height: 250px;
+  }
+   .imgHeaderAboutUs1 img {
+    width: 250px;
+    height: 250px;
+   
+  }
+  .COVERAboutUs {
+    width: 100%; /* was 0% before, fixing */
+    height: 80%;
+    margin-left: 0;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .COVERAboutUs .rightColumn {
+    padding-left: 30px;
+  }
+
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 24px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 16px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 32px;
+  }
+    .HiglihtAhmedMatter h4,
+  .HiglihtAhmedMatter h4 span {
+    font-size: 40px;
+  }
+  .HiglihtAhmedMatter button {
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+   .Space { height: 50vh; width: 100%; }
+ 
+  
+.nameSpace {
+  position: relative;
+  z-index: 2;
+  margin: 5px 0;
+}
+
+.nameSpace p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.nameSpace p span {
+  font-weight: 600;
+}
+
+  .CollectionSpace p { font-size: 20px; }
+    .CollectionSpace p { font-size: 20px; padding: 10px 20px; }
+  .SpaceVENUMContent {
+    gap: 20px;
+  }
+  .LeftText p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .imgRightSpaceVenum img {
+    width: 80%;
+  }
+/* Title */
+  .titlePreviousEventWrapper {
+    margin-left: -90px;
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 28px;
+    padding-top: 70px;
+  }
+
+  /* Columns */
+  .ColumnContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns side by side */
+    gap: 40px;
+  }
+
+  .PhotoEventColumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
+  }
+
+  /* Rows (images + text) */
+  .PhotoEventRow img,
+  .PhotoEventRow1 img,
+  .PhotoEventRow11 img,
+  .PhotoEventRow111 img,
+  .PhotoEventRow2 img,
+  .PhotoEventRow222 img,
+  .PhotoEventRow33 img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  /* Variations (short & long images) */
+  .PhotoEventRowShort img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .PhotoEventRowLong img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Text + icons */
+  .PhotoEventColumn p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .PhotoEventColumn i {
+    font-size: 18px;
+    padding: 4px;
+  }
+    .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .MenuFooter ul {
+    flex-direction: column;
+    gap: 20px;
+    line-height: 30px;
+  }
+
+  .footer-logo p {
+    max-width: 100%;
+  }
+
+  .MenuFooter a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+    .upcomingEventAboutUsPage { width: 380px; }
+  .COVERAboutUsPageLukum { width: 85%; padding: 12px; gap: 12px; }
+  .titleCoverAboutUsLakum p { font-size: 28px; }
+  .pnumber { font-size: 50px; }
+
+    .driveyoursoul {
+    padding: 30px 15px;
+  }
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 36px;
+  }
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 26px;
+  }
+
+    .titleLandingPage h4 {
+    font-size: 55px;
+  }
+  .buttonLandingPage button {
+    font-size: 25px;
+    padding: 18px 40px;
+  }
+
+   .COVERAboutUs1 {
+    padding: 8px 10px;
+   
+  }
+
+  .COVERAboutUs1 .dateAboutUs p {
+    font-size: 15px;
+  }
+
+  .COVERAboutUs1 .dateAboutUs .pnumber {
+    font-size: 22px;
+  }
+
+  .COVERAboutUs1 .titleCoverAboutUs p {
+    font-size: 17px;
+  }
+
+  .COVERAboutUs1 .timeAboutUs p {
+    font-size: 13px;
+  }
+
+  .COVERAboutUs1 .dateCoverAboutUs p {
+    font-size: 11px;
+  }
+}
+@media (min-width: 1025px) {
+  .bannerAhmedContainer {
+    flex-direction: row; /* side by side */
+    height: 500px; /* taller for big screens */
+  }
+
+  .banner-text h2 {
+    font-size: 50px;
+  }
+
+  .banner-text .year {
+    font-size: 50px;
+  }
+
+  .banner-text .date {
+    font-size: 25px;
+  }
+   .pastExhibit {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .pastExhibit .imgleft,
+  .pastExhibit .imgright {
+    max-width: 400px;
+  }
+
+  .pastExhibit .imgMiddle {
+    max-width: 500px;
+  }
+
+  .pastExhibit .imgleft img,
+  .pastExhibit .imgright img {
+    height: 400px;
+  }
+
+  .pastExhibit .imgMiddle img {
+    height: 550px;
+  }
+   .bannerAhmedContainer {
+    flex-direction: row; /* side by side */
+    height: 400px;
+  }
+
+  .banner-image {
+    flex: 1;
+  }
+
+  .banner-text {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .banner-text .date {
+    font-size: 25px;
+  }
+
+  .banner-text h2 {
+    font-size: 50px;
+  }
+
+  .banner-text .year {
+    font-size: 50px;
+  }
+
+   .bannerrightsideDrivenYourSoul {
+    width: 50%;
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 30px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 35px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 20px;
+  }
+
+  .bannerrightsideDrivenYourSoul .paragraphbanner p {
+    font-size: 18px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .card { flex: 0 0 calc(33.33% - 13.3px); height: 350px; }
+  .slider-container { width: 100%; }
+  .nav { width: 50px; height: 50px; font-size: 28px; }
+  .nameAhmedmatter p { font-size: 70px; }
+  .yearahmedmatter p { font-size: 60px; }
+  .dateAhmedmaater p { font-size: 30px; }
+  .ahmedHiglight { font-size: 20px; }
+}
+@media (max-width: 768px) {
+
+.nameSpace {
+  position: relative;
+  z-index: 2;
+  margin: 5px 0;
+}
+
+.nameSpace p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.nameSpace p span {
+  font-weight: 600;
+}
+
+  .headerContainer { padding: 12px 16px; }
+
+  /* Logo smaller */
+  .logo a { font-size: 22px; }
+  .logo p { font-size: 12px; }
+
+  /* Hide menu by default */
+  .headerContainer .MenuHeader ul {
+    display: none;
+    flex-direction: column; /* stack vertically */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%; 
+    height: 36vh;
+            /* full width */
+    background: #f6f6eb79;
+    padding: 15px 0;
+    border-radius: 0;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  /* Show menu when active via JS */
+  .MenuHeader ul.active { display: flex; }
+
+  /* Hamburger / close icons */
+  .ri-menu-line,
+  .ri-close-line { display: block; }
+
+  /* Menu items styling */
+  .MenuHeader ul li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .MenuHeader ul li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+
+
+  /* Banner adjustments */
+  .bannerAhmedContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-text h2 { font-size: 36px; }
+  .banner-text .year { font-size: 32px; }
+  .banner-text .date { font-size: 20px; }
+  .SpaceVENUMContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .LeftText, .imgRightSpaceVenum {
+    min-width: 100%;
+  }
+  .LeftText p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .imgRightSpaceVenum img {
+    width: 100%;
+  }
+
+    .MenuHeader ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .ri-menu-line {
+    display: block;
+  }
+    .LukumContiner .title h4 {
+    margin-left: 0px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .pastExhibitLukum {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 40px;
+  }
+
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgright,
+  .pastExhibitLukum .imgMiddle {
+    max-width: 90%;
+  }
+
+  .pastExhibitLukum img {
+    height: 300px;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 20px;
+    text-align: center;
+  }
+   .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  .MenuFooter ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .MenuFooter a {
+    font-size: 13px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+   .upcomingContianerAboutUs { flex-direction: column; align-items: center; gap: 25px; }
+  .COVERAboutUsPageLukum { width: 95%; padding: 10px; gap: 10px; }
+}
+@media (max-width: 820px) {
+  /* Title */
+  .LukumContiner .title h4 {
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* Container */
+  .pastExhibitLukum {
+    display: flex;
+    flex-direction: column; /* stack images vertically */
+    align-items: center;
+    margin-left: 0;
+    gap: 25px; /* space between blocks */
+    justify-content: center;
+  }
+
+  /* Each block */
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgMiddle,
+  .pastExhibitLukum .imgright {
+    max-width: 90%; /* make images smaller but still readable */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Images */
+  .pastExhibitLukum img {
+    width: 100%;
+    height: 250px; /* proportional for tablet portrait */
+    object-fit: cover;
+  }
+
+  /* Text under images */
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+   .upcomingEventAboutUsPage { width: 320px; }
+  .titleCoverAboutUsLakum p { font-size: 24px; }
+  .pnumber { font-size: 45px; }
+  .COVERAboutUsPageLukum { flex-direction: column; align-items: flex-start; width: 95%; }
+   .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 32px;
+  }
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 24px;
+  }
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+   .titleLandingPage h4 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .buttonLandingPage button {
+    font-size: 22px;
+    padding: 16px 35px;
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 576px) {
+  .dateBoxCalender {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .titleBox {
+    font-size: 16px;
+  }
+  .COVERCalender {
+    width: 90%;
+    padding: 10px 15px;
+  }
+  .COVERCalender .titleCalender {
+    font-size: 18px;
+  }
+  .COVERCalender .dateCalender p {
+    font-size: 18px;
+  }
+
+   .upcomingContianerAboutUs { flex-direction: column; align-items: center; gap: 25px; }
+  .COVERAboutUsPageLukum { width: 95%; padding: 10px; gap: 10px; }
+}
+@media (max-width: 1366px) {
+  .LukumContiner .title h4 {
+    margin-left: 0px;
+    font-size: 28px;
+  }
+
+  .pastExhibitLukum {
+    gap: 40px;
+    margin-left: 120px;
+  }
+
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgMiddle,
+  .pastExhibitLukum .imgright {
+    flex: 1 1 30%;
+    max-width: 300px;
+  }
+
+  .pastExhibitLukum img {
+    height: 300px;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 20px;
+    text-align: center;
+  }
+    .upcomingContianerAboutUs {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 40px auto;
+  }
+
+  .ComingEventContainerAboutUsPage {
+    max-width: 90%;
+  }
+
+  .COVERAboutUsPageLukum {
+    width: 100%;
+    flex-direction: row;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .COVERAboutUsPageLukum .rightColumnPage .titleCoverAboutUsLakum p {
+    font-size: 20px;
+  }
+  .COVERAboutUsPageLukum .leftColumnPage .dateAboutUs .pnumber {
+    font-size: 30px;
+  }
+}
+
+/* ==================== Laptop Width 1267.5px ==================== */
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card { flex: 0 0 calc(50% - 10px); height: 300px; }
+  .slider-container { width: 95%; }
+  .nav { width: 45px; height: 45px; font-size: 24px; }
+  .nameAhmedmatter p { font-size: 40px; }
+  .yearahmedmatter p { font-size: 20px; }
+  .dateAhmedmaater p { font-size: 18px; }
+  .ahmedHiglight { font-size: 16px; }
+    .CollectionSpace p { font-size: 18px; padding: 8px 18px; }
+    .Space { height: 45vh; }
+
+
+    .CollectionSpace p { font-size: 18px; padding: 8px 18px; }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* Title adjustments */
+  .LukumContiner .title h4 {
+    margin-top: 50px;
+    margin-left: 80px; /* smaller than desktop margin */
+    font-size: 28px;
+  }
+
+  /* Container adjustments */
+  .pastExhibitLukum {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping if needed */
+    gap: 30px; /* smaller gap for laptops */
+    margin-left: 80px;
+    justify-content: flex-start;
+  }
+
+  /* Each blog/image box */
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgright,
+  .pastExhibitLukum .imgMiddle {
+    flex: 1 1 30%; /* 3-column layout */
+    max-width: 300px; /* prevents oversized blocks */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Images */
+  .pastExhibitLukum img {
+    width: 100%;
+    height: 300px; /* proportional to laptop screen */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Text under images */
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .upcomingContianerAboutUs{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .previousEventContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .PhotoEventColumn {
+    max-width: 400px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+  }
+
+  .PhotoEventRow p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .upcomingContianer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    
+  }
+
+  .upcomingEventAboutUs {
+    flex: 1 1 45%; /* 2 columns */
+    max-width: 100%;
+    margin-left: -200px;
+  }
+
+  .imgHeaderAboutUs img {
+    width: 100%;
+    height: auto;
+  }
+
+  .COVERAboutUs1 {
+    left: 0;
+    background-color: #f6f6eb70;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .upcomingContianer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  
+
+  .imgHeaderAboutUs img {
+    width: 100%;
+    height: auto;
+  }
+
+  .COVERAboutUs1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+    flex-direction: column; /* stack date + info */
+    align-items: flex-start;
+  }
+
+  .COVERAboutUs1 .leftColumn {
+    padding-left: 10px;
+    align-items: flex-start;
+  }
+
+  .COVERAboutUs1 .dateAboutUs p {
+    font-size: 20px;
+  }
+  .COVERAboutUs1 .dateAboutUs .pnumber {
+    font-size: 32px;
+  }
+  .upcomingContianerAboutUs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .upcomingEventAboutUsPage {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .COVERAboutUsPageLukum {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .leftColumnPage {
+    text-align: left;
+  }
+
+  .dateAboutUs p {
+    font-size: 14px;
+  }
+
+  .dateAboutUs .pnumber {
+    font-size: 22px;
+  }
+
+  .titleCoverAboutUsLakum p {
+    font-size: 16px;
+  }
+
+  .timeAboutUsLAKUM p,
+  .dateCoverAboutUsLAKUM p {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoulComing button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+/* ---------- Responsive: Tablets & Mobiles (≤1024px) ---------- */
+@media (max-width: 1440px) {
+
+  .LukumContiner{
+    margin-left: 0px;
+  }
+  .LukumContiner .title h4 {
+  font-size: 30px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 400;
+ 
+  
+ 
+  
+  
+}
+  .pastExhibitLukum {
+    gap: 10px;
+    
+  }
+
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgright {
+    flex: 1 1 280px;        /* scale down from 300 */
+    max-width: 350px;
+  }
+
+  .pastExhibitLukum .imgMiddle {
+    flex: 1 1 320px;
+    max-width: 450px;       /* narrower middle image */
+  }
+
+  .pastExhibitLukum .imgleft img,
+  .pastExhibitLukum .imgright img,
+  .pastExhibitLukum .imgMiddle img {
+    height: 350px;          /* reduce from 400px */
+  }
+
+  .pastExhibitLukum p {
+    font-size: 24px;    
+       /* scale text slightly smaller */
+  }
+  .pastExhibitLukum  .imgMiddle p {
+    font-size: 24px;        /* scale text slightly smaller */
+  }
+
+  .pastExhibitLukum .title h4 {
+    font-size: 20px;        /* reduce title font size */
+  }
+  .titlePreviousEventWrapper{
+  display: flex;
+  flex-direction: row;
+}
+.titlePreviousEventWrapper h4{
+  font-size: 30px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 400;
+  text-align: left;
+  padding-top: 100px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: -30px;
+}
+
+.PhotoEventColumn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-left: 0px;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Keep your image sizes unchanged */
+.PhotoEventRowLong img {
+  width: 300px;
+  height: 300px;
+}
+
+.deleteImge img{
+  display: none;
+}
+.deleteImge i{
+  display: none;
+}
+
+.PhotoEventRow img {
+  width: 400px;
+  height: 400px;
+  
+}
+.PhotoEventRowShort img {
+  width: 250px;
+  height: 250px;
+}
+
+/* Paragraph + arrow flex */
+.PhotoEventColumn p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between text and arrow */
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Arrow styling */
+.PhotoEventColumn i {
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  padding: 5px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deleteImge i{
+  display: none;
+}
+.deleteImge span{
+  display: none;
+}
+
+.upcomingEvents {
+  display: flex;
+  gap: 20px;              /* space between items */
+  justify-content: center; 
+  margin: 40px;
+}
+
+.upcomingEvents {
+  display: flex;
+  flex-wrap: wrap;   /* allow items to wrap to next line */
+  gap: 20px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.eventItem {
+  flex: 1 1 300px;       /* responsive width (min 300px, grow if space) */
+  max-width: 550px;      /* never exceed this */
+  text-align: center;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.imgWrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.dateBox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #fff;
+  color: #000;
+  padding: 0px 50px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+}
+
+.titleBox {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+  .PhotoEventColumn {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: auto;
+    gap: 30px;
+  }
+  
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .PhotoEventColumn {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+ .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 23px;
+  }
+
+ .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 18px;
+  }
+
+.driveyoursoul  .buttonDiscoverMoreDriveYourSoul button {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1866px) {
+  .aboutUs {
+    padding: 30px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 24px;
+  }
+
+  .paragraphAboutUs p {
+    font-size: 17px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+   #generic_price_table {
+    padding: 60px 100px;
+  }
+  .top-row, .bottom-row {
+    flex-wrap: wrap;
+  }
+  .top-row .generic_content {
+    width: 48%;
+  }
+  .bottom-row .generic_content {
+    width: 48%;
+  }
+  .bottom-row {
+    justify-content: center; /* center bottom row */
+    gap: 30px; /* space between the two cards */
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* Title adjustments */
+  
+}
+
+
+@media (max-width: 1024px) {
+  .Menu {
+    display: none; /* hidden by default */
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .Menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Show hamburger on iPad & smaller */
+  .ri-menu-line {
+    display: block;
+  }
+
+  .ri-close-line {
+    display: none;
+  }
+
+  /* Show menu when active */
+  .Menu.active {
+    display: block;
+  }
+
+  .ri-close-line.active {
+    display: block;
+  }
+
+  .ri-menu-line.hide {
+    display: none;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .textAboutUs {
+    max-width: 100%;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 26px;
+  }
+
+  .paragraphAboutUs p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .bannerText,
+  .bannerImage {
+    max-width: 100%;
+  }
+
+  .bannerText h2 {
+    font-size: 28px;
+  }
+
+  .bannerText p {
+    font-size: 16px;
+  }
+.numberCount {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: auto auto; /* 2 rows */
+    gap: 30px;
+    padding: 40px 30px;
+  }
+
+  /* make first column stack items 1+2, second column 3+4 */
+  .numberCount > div:nth-child(1),
+  .numberCount > div:nth-child(3) {
+    grid-column: 1;
+  }
+
+  .numberCount > div:nth-child(2),
+  .numberCount > div:nth-child(4) {
+    grid-column: 2;
+  }
+
+  .numberCount a {
+    font-size: 30px;
+  }
+
+  .numberCount p {
+    font-size: 16px;
+  }
+
+   .bannnerArtPaceGallary .Higlight {
+    font-size: 36px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 20px;
+  }
+    .scrollTrack img {
+    height: 50px;
+  }
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventItem {
+    width: 90%;       /* use most of screen */
+    max-width: 500px; /* but not too large */
+  }
+
+  .titleBox {
+    font-size: 20px;
+  }
+
+  .dateBox {
+    padding: 5px 30px;  /* smaller date box */
+    font-size: 12px;
+  }
+   .upcomingEvent {
+    padding: 20px 40px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .upcomingEvents {
+    gap: 15px;            /* slightly smaller gap */
+  }
+ .upcomingEventslAKUM {
+    gap: 15px;  
+    display: flex;
+    flex-direction: column;          /* slightly smaller gap */
+  }
+  .eventItem {
+    flex: 1 1 45%;        /* 2 items per row if space allows */
+    max-width: 500px;
+  }
+
+  .titleBox {
+    font-size: 22px;
+  }
+
+  .dateBox {
+    padding: 5px 40px;
+    font-size: 13px;
+  }
+   .COVER {
+    margin-left: 200px;   /* reduce margin */
+    width: calc(100% - 200px);
+  }
+  .pastExhibit {
+    padding-left: 50px;
+    gap: 30px;
+  }
+
+  .pastExhibit p {
+    font-size: 24px;
+  }
+  .bannerAhmedMatter {
+    flex-direction: column;  /* stack text and image */
+    height: auto;
+    padding: 0px;
+  }
+
+  .bannerleftside {
+    padding-left: 0;
+    text-align: center;
+    
+  }
+
+  .bannerleftside .date p {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+
+  .bannerleftside .name h2 {
+    font-size: 28px;
+  }
+
+  .bannerleftside .year p {
+    font-size: 20px;
+  }
+
+  .bannerrightside {
+    width: 100%;
+    height: 300px;
+    margin-top:0px;
+  }
+ .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 30px;
+  }
+
+ .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 25px;
+  }
+
+  .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+
+   .upcomingEventAboutUs {
+    padding: 20px 50px;
+  }
+ .upcomingEventAboutUs1 {
+    padding: 20px 50px;
+  }
+
+  .imgHeaderAboutUs img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .COVERAboutUs {
+    left: 0;
+    width: 100%;
+    height: 70%;
+    padding: 15px 20px;
+  }
+
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 30px;
+  }
+
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 22px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 16px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .bannerleftsideDrivenYourSoul,
+  .bannerrightsideDrivenYourSoul {
+    width: 100%; /* stack vertically */
+   
+  }
+
+  .bannerleftsideDrivenYourSoul {
+    height: 380px;
+  }
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 24px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 20px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 18px;
+  }
+
+  .upComingExhibitions .titleExhibitions h4 {
+    margin-left: 50px;
+  }
+   .upcomingEventAboutUs {
+    padding: 20px 50px;
+  }
+ .upcomingEventAboutUs1 {
+    padding: 20px 50px;
+  }
+
+ 
+.COVER {
+    margin-left: -400px;       /* remove margin for small screens */
+    width: 100%;          /* full width */
+    height: auto;         /* adjust height */
+    padding: 15px 20px;
+    background: #ffffff77;
+  }
+  .COVER1 {
+    margin-left: -400px;       /* remove margin for small screens */
+    width: 100%;          /* full width */
+    height: auto;         /* adjust height */
+    padding: 15px 20px;
+    background: #ffffff77;
+  }
+  .COVERAboutUs {
+    left: 0;
+    width: 100%;
+    height: 70%;
+    padding: 15px 20px;
+  }
+
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 30px;
+  }
+
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 22px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 16px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+   .titleYourown h4 {
+    font-size: 2.5rem;
+  }
+
+  .buttonDiscoverMoreYourown button {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+  .MenuFooter {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 150px;
+    text-align: center;
+  }
+
+  .MenuFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .MenuFooter li {
+    margin: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+  }
+   .nameAhmedmatter p {
+    font-size: 40px;
+  }
+  .yearahmedmatter p {
+    font-size: 20px;
+  }
+
+    .ahmedHiglight {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 30px auto;
+  }
+
+  
+  .COVERLAKUM {
+    width: 45%;         /* make overlay wider */
+    height: 80%;
+    padding: 15px 20px;
+  }
+
+  .COVERLAKUM .titleCOVERLAKUM p {
+    font-size: 26px;
+  }
+
+  .COVERLAKUM .date p {
+    font-size: 18px;
+  }
+
+  .COVERLAKUM .paragraphCOVERLAKUM p {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .buttonDiscoverMoreLAKUM {
+    position: absolute;
+       /* stack inside the cover instead of absolute */
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+
+  .buttonDiscoverMoreLAKUM button {
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #333;  /* adjust for readability */
+    border-color: #333;
+  }
+  .buttonDiscoverMoreLAKUMLEFT {
+    position: absolute;
+       /* stack inside the cover instead of absolute */
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+
+  .buttonDiscoverMoreLAKUMLEFT button {
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #333;  /* adjust for readability */
+    border-color: #333;
+  }
+.titlePreviousEventContainer h4 {
+    font-size: 26px;
+    margin-left: 0px;
+    padding-top: 50px;
+  }
+
+   .hrLine {
+   display: none;
+  }
+
+  .hrLine hr {
+    width: 80%;
+  }
+
+  .PhotoEventColumn {
+    flex-direction: column; /* stack events vertically */
+    padding-left: 20px;
+    gap: 30px;
+  }
+
+  .PhotoEventRowLong img,
+  .PhotoEventRow img,
+  .PhotoEventRowShort img {
+    width: 100%; /* full width of container */
+    height: auto;
+    max-width: 500px;
+  }
+
+  .PhotoEventRowLong,
+  .PhotoEventRow,
+  .PhotoEventRowShort {
+    position: relative;
+  }
+
+  .PhotoEventRowLong p,
+  .PhotoEventRow p,
+  .PhotoEventRowShort p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Move the arrow inside the paragraph on left */
+  .PhotoEventColumn i {
+    position: static; /* remove absolute positioning */
+    margin-left: 0;
+    color: #000; /* adjust color if needed */
+  }
+  .titlePreviousEventContainer h4 {
+    
+    font-size: 28px;
+  }
+  .hrLine {
+    margin-left: 50px;
+  }
+  .previousEventContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PhotoEventColumn {
+    padding-left: 20px;
+    gap: 30px;
+    
+  }
+  .PhotoEventRow img,
+  .PhotoEventRowLong img,
+  .PhotoEventRowShort img {
+    height: auto;
+    width: 90%;
+  }
+   .calendarContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .monthsSidebar {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .monthsSidebar li {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  .monthsSidebar li.active {
+    border-bottom: 2px solid #000;
+  }
+  .eventsList {
+    width: 100%;
+  }
+  .previousEventContainer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .PhotoEventColumn {
+    flex: 1 1 45%;
+    max-width: 600px;
+  }
+   .pastExhibitLukum {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgright,
+  .pastExhibitLukum .imgMiddle {
+    max-width: 100%;
+  }
+
+  .pastExhibitLukum img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 20px;
+    text-align: center; /* center for smaller screens */
+  }
+
+  .LukumContiner .title h4 {
+    font-size: 24px;
+    margin-left: 0px; /* shrink margin */
+    text-align: center;
+  }
+  
+.imgHeader1 {
+  position: relative;
+  width: 100%;
+  
+  justify-content: center;
+}
+
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .previousEventContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .PhotoEventColumn {
+    max-width: 400px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+  }
+
+  .PhotoEventRow p {
+    font-size: 0.9rem;
+  }
+    .HiglihtAhmedMatter h4,
+  .HiglihtAhmedMatter h4 span {
+    font-size: 30px;
+  }
+  .HiglihtAhmedMatter button {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  .card { flex: 0 0 100%; height: 250px; }
+  .slider-container { width: 100%; }
+  .nav { width: 40px; height: 40px; font-size: 22px; }
+  .nameAhmedmatter p { font-size: 30px; }
+  .yearahmedmatter p { font-size: 18px; }
+  .dateAhmedmaater p { font-size: 16px; }
+  .ahmedHiglight { font-size: 16px; padding: 0 15px; }
+    .HiglihtAhmedMatter h4,
+  .HiglihtAhmedMatter h4 span {
+    font-size: 24px;
+  }
+  .HiglihtAhmedMatter button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+  
+}
+@media (max-width: 820px) {
+  .previousEventContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .PhotoEventColumn {
+    width: 100%;
+    max-width: 340px; /* keeps it centered and not too wide */
+    gap: 15px;
+  }
+
+  .PhotoEventRow img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .PhotoEventRow p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+ .imgHeaderLakum img {
+    height: 600px;
+  }
+.upcomingEventslAKUM {
+    gap: 15px;  
+    display: flex;
+    flex-direction: column;          /* slightly smaller gap */
+  }
+  .COVERLAKUM {
+    width: 80%;
+    height: 200px;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 20px;
+  }
+
+  .COVERLAKUM .titleCOVERLAKUM p {
+    font-size: 28px;
+  }
+
+  .COVERLAKUM .date p {
+    font-size: 16px;
+  }
+
+  .COVERLAKUM .paragraphCOVERLAKUM p {
+    font-size: 14px;
+  }
+
+  .buttonDiscoverMoreLAKUM {
+    bottom: 25px;
+    left: 320px;
+    width: 200px;
+  }
+
+  .buttonDiscoverMoreLAKUM button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .buttonDiscoverMoreLAKUMLEFT {
+    bottom: 25px;
+    left: 320px;
+    width: 200px;
+  }
+
+  .buttonDiscoverMoreLAKUMLEFT button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+    .previousEventContainer {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .LandingPageCover {
+    height: 100vh;
+  }
+  .titleLandingPage h4 {
+    font-size: 28px;
+  }
+  .buttonLandingPage button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+
+  /* Small tablets & mobiles (≤810px) */
+
+
+/* -------------------- Tablet Devices (600px – 1024px) -------------------- */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .previousEventContainer {
+    flex-direction: column;       /* stack columns */
+    align-items: center;          /* center content */
+    gap: 20px;                    /* space between columns */
+    padding: 20px 15px;           /* smaller padding for tablet */
+  }
+
+  .PhotoEventColumn {
+    width: 100%;                  /* full width */
+    max-width: 360px;             /* prevent too wide */
+    display: flex;
+    flex-direction: column;       /* stack rows vertically */
+    gap: 15px;                    /* spacing between rows */
+    align-items: center;          /* center content */
+  }
+
+  .PhotoEventRow {
+    width: 100%;                  /* full width inside column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .PhotoEventRow img {
+    width: 100%;                  /* image fills row */
+    max-width: 340px;             /* limit image width */
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .PhotoEventRow p {
+    font-size: 0.9rem;            /* readable on tablet */
+    text-align: center;
+    margin-top: 8px;
+  }
+ 
+}
+/* iPad Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .upcomingEventCalender {
+    padding: 20px 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgHeader1Calender {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+  }
+
+  .COVERCalender {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* date on left */
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .ROWdate {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .COVERCalender .dateCalender p {
+    font-size: 30px;
+  }
+    .titledriveyoursoul h4 {
+    font-size: 22px;
+  }
+
+  .higlightdriveyoursoul p {
+    font-size: 16px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+}
+@media (max-width: 768px) {
+  /* Upcoming Event */
+  .upcomingEvent {
+    padding: 20px 30px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .eventItem {
+    flex: 1 1 90%;
+    max-width: 500px;
+  }
+
+  .titleBox {
+    font-size: 16px; /* unified with later duplicate */
+  }
+
+  .dateBox {
+    padding: 5px 30px;
+    font-size: 12px;
+  }
+
+  .dateBoxCalender {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-logo p {
+    margin: auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .MenuFooter ul {
+    justify-content: center;
+  }
+
+  /* Past Exhibit */
+  .pastExhibit {
+    flex-direction: column; /* stack images */
+    padding-left: 0;
+    padding-top: 50px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .pastExhibit p {
+    font-size: 20px;
+  }
+
+  .pastExhibit .imgleft,
+  .pastExhibit .imgMiddle,
+  .pastExhibit .imgright {
+    max-width: 90%;
+  }
+
+  /* Your Own */
+  .ContainerYourown {
+    height: 70vh; /* shorter height for mobile */
+    padding: 15px;
+  }
+
+  .titleYourown h4 {
+    font-size: 2rem;
+  }
+
+  .buttonDiscoverMoreYourown button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  /* Previous Event */
+  .titlePreviousEventContainer h4 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  .hrLine {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .PhotoEventColumn {
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 20px;
+  }
+ .PhotoEventColumn i {
+    display: inline;
+    font-size: 12px;
+    color: #000;
+  }
+  .PhotoEventRow img,
+  .PhotoEventRowLong img,
+  .PhotoEventRowShort img {
+    width: 100%;
+    height: auto;
+  }
+  .PhotoEventColumn p {
+    font-size: 16px;
+  }
+
+  /* Calendar */
+  .imgWrapperCalender img {
+    width: 90%;
+  }
+
+   #generic_price_table {
+    padding: 60px 50px;
+  }
+  .top-row, .bottom-row {
+    flex-direction: column;
+  }
+  .top-row .generic_content, .bottom-row .generic_content {
+    width: 100%;
+  }
+  .ExploreCoverLakum {
+    height: 70vh;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 30px;
+  }
+
+  .CoverImage button {
+    padding: 10px 22px;
+    font-size: 1rem;
+  }
+   .upcomingContianer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .driveyoursoul {
+    gap: 12px;
+  }
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 28px;
+  }
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 20px;
+  }
+   .titleLandingPage h4 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .buttonLandingPage button {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .pastExhibit p {
+    font-size: 18px;
+  }
+ .titleLandingPage h4 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .buttonLandingPage button {
+    font-size: 18px;
+    padding: 12px 28px;
+    width: 85%;
+    margin: 15px auto;
+    display: block;
+  }
+}
+@media (min-width: 1920px) {
+  .ExploreCoverLakum {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 80px;
+  }
+
+  .CoverImage button {
+    padding: 14px 32px;
+    font-size: 1.2rem;
+  }
+  .ComingEventContainerAboutUsPage {
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+}
+
+.imgHeaderAboutUsPage img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.COVERAboutUsPageLukum {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Left column */
+.COVERAboutUsPageLukum .leftColumnPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+.COVERAboutUsPageLukum .leftColumnPage .dateAboutUs p {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+.COVERAboutUsPageLukum .leftColumnPage .dateAboutUs .pnumber {
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+}
+
+/* Right column */
+.COVERAboutUsPageLukum .rightColumnPage {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+}
+
+.COVERAboutUsPageLukum .rightColumnPage .titleCoverAboutUsLakum p {
+  font-size: 26px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.COVERAboutUsPageLukum .rightColumnPage .timeAboutUsLAKUM p {
+  color: rgb(248, 166, 58);
+  font-size: 18px;
+  margin: 0;
+}
+.COVERAboutUsPageLukum .rightColumnPage .dateCoverAboutUsLAKUM p {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  margin: 0;
+}
+}
+@media (max-width: 1366px) {
+  .upcomingEventAboutUsPage { width: 450px; }
+  .titleCoverAboutUsLakum p { font-size: 32px; }
+ 
+}
+
+/* 💻 Laptop/Desktop (above 1024px) */
+@media (min-width: 1025px) {
+  .titledriveyoursoul h4 {
+    font-size: 28px;
+  }
+
+  .higlightdriveyoursoul p {
+    font-size: 22px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+    .upcomingEventAboutUsPage { width: 400px; }
+
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .upcomingContianerAboutUs {
+    gap: 20px;
+  }
+
+  .upcomingEventAboutUsPage {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .COVERAboutUsPageLukum {
+    padding: 12px;
+    flex-direction: row;
+  }
+
+  .dateAboutUs p {
+    font-size: 16px;
+  }
+
+  .dateAboutUs .pnumber {
+    font-size: 24px;
+  }
+
+  .titleCoverAboutUsLakum p {
+    font-size: 18px;
+  }
+
+  .timeAboutUsLAKUM p,
+  .dateCoverAboutUsLAKUM p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  .nameSpace p {
+    font-size: 18px;
+  }
+  .nameSpace p span {
+    font-size: 14px;
+  }
+}
+/* ---------- Responsive: Small devices (375px) ---------- */
+
+/* ✅ Responsive design for 414px width (mobile screens) */
+
+
+
+@media (max-width: 540px) {
+.ExploreCoverLakum{
+  max-width: 93%;
+}
+  .logo a {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 13px;
+  }
+
+  .MenuHeader ul li a {
+    font-size: 16px;
+  }
+
+  .aboutUs {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 22px;
+  }
+
+  .paragraphbanner {
+    text-align: left;
+    margin-left: 60px;
+  }
+.CollectionSpace p { font-size: 18px; padding: 5px 0px; }
+  .paragraphAboutUs p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+.LukumContiner{
+  margin-left: -100px;
+}
+.buttonDiscoverMoreLAKUMLEFT{
+  display: none;
+}
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bannerText h2 {
+    font-size: 24px;
+  }
+
+  .PhotoEventRow p {
+    font-size: 17px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .PhotoEventColumn {
+    flex: 1 1 100%;
+    gap: 25px;
+    padding-left: 10px;
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .bannerText p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .banner {
+    padding: 25px 20px;
+    gap: 25px;
+  }
+
+  .numberCount {
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .numberCount a {
+    font-size: 26px;
+  }
+
+  .numberCount p {
+    font-size: 15px;
+  }
+
+  .bannnerArtPaceGallary .Higlight {
+    font-size: 30px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 17px;
+  }
+
+  .scrollTrack img {
+    height: 50px;
+  }
+
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+  }
+
+  .eventItem {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .titleBox {
+    font-size: 20px;
+  }
+
+  .dateBox {
+    padding: 12px 35px;
+    font-size: 17px;
+  }
+
+  .upcomingEvent {
+    padding: 20px 20px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .COVER .date p,
+  .COVER .titleCover,
+  .COVER .dateCover {
+    font-size: 20px;
+  }
+
+  .COVER {
+    width: 100%;
+    padding: 20px 25px;
+  }
+
+  .imgHeaderAboutUs1 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .buttonDiscoverMore button {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 32px;
+  }
+
+  .CoverImage button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .MenuFooter ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .MenuFooter ul li {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* ---------- Responsive Design for 412px ---------- */
+@media (max-width: 430px) {
+  .HomeContainer {
+    width: 100%;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 13px;
+  }
+
+  .MenuHeader ul li a {
+    font-size: 16px;
+  }
+
+  .aboutUs {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 22px;
+  }
+
+  .paragraphbanner {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .paragraphAboutUs p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bannerText h2 {
+    font-size: 24px;
+  }
+
+  .PhotoEventRow p {
+    font-size: 19px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .PhotoEventColumn {
+    flex: 1 1 100%;
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .bannerText p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .banner {
+    padding: 22px 20px;
+    gap: 22px;
+  }
+
+  .numberCount {
+    gap: 25px;
+    padding: 25px 20px;
+  }
+
+  .numberCount a {
+    font-size: 26px;
+  }
+
+  .numberCount p {
+    font-size: 16px;
+  }
+
+  .bannnerArtPaceGallary .Higlight {
+    font-size: 30px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 18px;
+  }
+
+  .scrollTrack img {
+    height: 45px;
+  }
+
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 20px;
+  }
+
+  .eventItem {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .titleBox {
+    font-size: 18px;
+  }
+
+  .dateBox {
+    padding: 6px 20px;
+    font-size: 13px;
+  }
+
+  .upcomingEvent {
+    padding: 20px 20px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .EXHIBITIONPREVIUSCONTAINER h4 {
+    font-size: 20px;
+    margin-left: 25px;
+  }
+
+  .COVER {
+    margin-left: -400px;
+    width: 100%;
+    padding: 20px 22px;
+    background: #ffffff77;
+  }
+
+  .COVER .titleCover {
+    font-size: 20px;
+  }
+
+  .COVER .date p,
+  .COVER .time,
+  .COVER .dateCover {
+    font-size: 18px;
+  }
+
+  .COVER .time {
+    color: rgb(255, 145, 0);
+  }
+
+  .imgHeaderAboutUs1 img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .buttonDiscoverMore button {
+    padding: 11px 24px;
+    font-size: 16px;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 32px;
+  }
+
+  .CoverImage button {
+    padding: 13px 22px;
+    font-size: 17px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .MenuFooter ul {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .MenuFooter ul li {
+    font-size: 15px;
+  }
+
+  .bannerleftside .date p {
+    font-size: 32px;
+  }
+
+  .bannerleftside .name h2 {
+    font-size: 24px;
+  }
+
+  .bannerleftside .year p {
+    font-size: 20px;
+  }
+
+  .driveyoursoul {
+    padding: 25px 14px;
+  }
+
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 20px;
+  }
+
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 16px;
+  }
+
+  .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .ahmedmatter {
+    height: 64vh;
+    padding: 12px 20px;
+  }
+
+  .nameAhmedmatter p {
+    font-size: 28px;
+  }
+
+  .yearahmedmatter p {
+    font-size: 16px;
+  }
+
+  .dateAhmedmaater p {
+    font-size: 16px;
+  }
+
+  .ahmedHiglight {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 22px auto;
+    padding: 0 20px;
+  }
+
+  .buttonDiscoverMoreYourown button {
+    font-size: 14px;
+    padding: 9px 13px;
+  }
+
+  .LukumContiner .title h4 {
+    font-size: 22px;
+  }
+
+  .pastExhibitLukum {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pastExhibitLukum img {
+    width: 94%;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .ExploreCoverLakum {
+    height: 67vh;
+    width: 94%;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 27px;
+  }
+
+  .CoverImage button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .upcomingEventCalender {
+    padding: 12px;
+  }
+
+  .titleupcomingEventCalender h3 {
+    font-size: 22px;
+  }
+
+  .COVERCalender {
+    padding: 14px;
+    margin-top: -45px;
+  }
+
+  .COVERCalender .titleCoverCalender {
+    font-size: 20px;
+  }
+
+  .COVERCalender .timeCalender {
+    font-size: 16px;
+  }
+
+  .buttonDiscoverMoreCalender button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .LandingPageCover {
+    height: 100vh;
+  }
+
+  .titleLandingPage h4 {
+    font-size: 23px;
+    padding: 0 14px;
+  }
+
+  .ColumnContainer {
+    gap: 5px;
+  }
+
+  .PhotoEventRowLong span,
+  .PhotoEventRow span,
+  .PhotoEventRowShort span {
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .PhotoEventColumn p {
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+
+  .PhotoEventColumn i {
+    font-size: 12px;
+  }
+
+  .buttonLandingPage button {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .slider-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    height: 230px;
+  }
+
+  .nav {
+    width: 36px;
+    height: 36px;
+    font-size: 21px;
+  }
+
+  .Space {
+    height: 38vh;
+    max-width: 100%;
+  }
+
+  .nameSpace p {
+    font-size: 19px;
+  }
+
+  .nameSpace p span {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    padding: 14px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 9px 9px 9px 32px;
+    font-size: 14px;
+  }
+
+  .ButtonFormRow {
+    font-size: 15px;
+    padding: 13px;
+  }
+
+  .generic_feature_list ul li {
+    font-size: 16px;
+  }
+
+  .generic_price_btn a {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .SpaceVENUMContainer .titleSpaceVenum h4 {
+    font-size: 20px;
+  }
+
+  .LeftText p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 414px) {
+  .logo a {
+    font-size: 19px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .MenuHeader ul li a{
+    font-size: 15px;
+  }
+.LukumContiner{
+  margin-left: -100px;
+}
+.COVERLAKUM .date p{
+margin-top: 0.1px;
+}
+  .ExploreCoverLakum {
+    height: 60vh;
+   width: 100%;
+   max-width:95%;
+  }
+  .CoverImage{
+    width:100%;
+    max-width: 100%;
+  }
+  .aboutUs {
+    padding: 22px;
+    gap: 22px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 22px;
+  }
+
+  .paragraphbanner{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .paragraphAboutUs p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bannerText h2 {
+    font-size: 24px;
+  }
+
+  .PhotoEventRow p {
+    font-size: 18px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .PhotoEventColumn {
+    flex: 1 1 100%;
+    gap: 20px;
+    padding-left: 10px;
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .bannerText p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .banner {
+    padding: 22px 15px;
+    gap: 22px;
+  }
+
+  .numberCount {
+    gap: 22px;
+    padding: 22px 15px;
+  }
+
+  .numberCount a {
+    font-size: 26px;
+  }
+
+  .numberCount p {
+    font-size: 15px;
+  }
+
+  .bannnerArtPaceGallary .Higlight {
+    font-size: 30px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 17px;
+  }
+
+  .scrollTrack img {
+    height: 42px;
+  }
+
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin: 15px;
+  }
+
+  .eventItem {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .titleBox {
+    font-size: 17px;
+  }
+
+  .EXHIBITIONPREVIUSCONTAINER h4{
+    font-size: 19px;
+    margin-left: 20px;
+  }
+
+  .dateBox {
+    padding: 4px 16px;
+    font-size: 12px;
+  }
+
+  .upcomingEvent {
+    padding: 16px 15px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .COVER .date p {
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .COVER .titleCover {
+    font-size: 19px;
+    margin:5px 0;
+    font-family: 'Atyp Kido TRIAL', sans-serif;  
+    font-weight: 500;
+  }
+
+  .COVER {
+    margin-left: -380px;
+    width: 100%;
+    height: auto;
+    padding: 16px 20px;
+    background: #ffffff77;
+  }
+
+  .COVER .time {
+    color: rgb(255, 145, 0);
+    font-weight: 300;
+  }
+
+  .imgHeaderAboutUs1 img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .buttonDiscoverMore button{
+    padding: 11px 22px;
+    font-size:16px;
+  }
+
+  .CoverImageLakum h4{
+    font-size: 32px;
+  }
+
+  .CoverImage button{
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    max-width: 100%;
+  }
+
+  .MenuFooter ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .MenuFooter ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .bannerleftside .date p { font-size: 30px; }
+  .bannerleftside .name h2 { font-size: 24px; }
+  .bannerleftside .year p { font-size: 20px; }
+
+  .bannerrightside { height: 210px; margin:0; }
+  .driveyoursoul {
+    padding: 22px 12px;
+  }
+
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 20px;
+  }
+
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 15px;
+  }
+
+  .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .bannerDrivenYourSoul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bannerleftsideDrivenYourSoul {
+    width: 100%;
+    height: 190px;
+  }
+
+  .bannerrightsideDrivenYourSoul {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 17px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 15px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 13px;
+  }
+
+  .bannerrightsideDrivenYourSoul .paragraphbanner p {
+    font-size: 13px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoulCoverBanner button {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .upcomingContianer {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .pastExhibitLukum .imgleft img,
+  .pastExhibitLukum .imgright img,
+  .pastExhibitLukum .imgMiddle img {
+    height: auto;
+    width: 92%;
+  }
+
+  .imgHeaderLakum img {
+    height: 470px;
+  }
+
+  .COVERLAKUM {
+    width: 92%;
+    padding: 12px;
+  }
+
+  .COVERLAKUM .titleCOVERLAKUM p {
+    font-size: 22px;
+  }
+
+  .COVERLAKUM .date p {
+    font-size: 15px;
+  }
+
+  .COVERLAKUM .paragraphCOVERLAKUM p {
+    font-size: 13px;
+  }
+
+  .buttonDiscoverMoreLAKUM button {
+    font-size: 13px;
+    padding: 7px 16px;
+  }
+
+  .LandingPageCover {
+    height: 100vh;
+  }
+
+  .titleLandingPage h4 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .buttonLandingPage button {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .slider-container1 .slide {
+    min-width: 92%;
+    margin-right: 10px;
+  }
+
+  .generic_head_content .head span {
+    font-size: 17px;
+  }
+
+  .generic_price_tag .price {
+    font-size: 19px;
+  }
+
+  .generic_feature_list ul li {
+    font-size: 14px;
+  }
+
+  .generic_price_btn a {
+    font-size: 13px;
+    padding: 9px 18px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 10px 10px 10px 34px;
+    font-size: 13px;
+  }
+
+  .input-icon i {
+    font-size: 14px;
+  }
+
+  .ButtonFormRow {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
+
+@media (max-width: 390px) {
+  .HomeContainer {
+   width: 100%;
+   
+  }
+
+  .logo a {
+    font-size: 19px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .MenuHeader ul li a {
+    font-size: 15px;
+  }
+
+  .aboutUs {
+    padding: 22px;
+    gap: 22px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 21px;
+  }
+
+  .paragraphbanner {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+  }
+
+  .paragraphAboutUs p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bannerText h2 {
+    font-size: 23px;
+  }
+
+  .PhotoEventRow p {
+    font-size: 18px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .PhotoEventColumn {
+    flex: 1 1 100%;
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .bannerText p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .banner {
+    padding: 20px 18px;
+    gap: 20px;
+  }
+
+  .numberCount {
+    gap: 22px;
+    padding: 22px 18px;
+  }
+
+  .numberCount a {
+    font-size: 25px;
+  }
+
+  .numberCount p {
+    font-size: 15px;
+  }
+
+  .bannnerArtPaceGallary .Higlight {
+    font-size: 29px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 17px;
+  }
+
+  .scrollTrack img {
+    height: 42px;
+  }
+
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin: 18px;
+  }
+
+  .eventItem {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .titleBox {
+    font-size: 17px;
+  }
+
+  .dateBox {
+    padding: 5px 18px;
+    font-size: 12px;
+  }
+
+  .upcomingEvent {
+    padding: 18px 18px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .EXHIBITIONPREVIUSCONTAINER h4 {
+    font-size: 19px;
+    margin-left: 20px;
+  }
+
+  .COVER {
+    margin-left: -380px;
+    width: 100%;
+    padding: 18px 20px;
+    background: #ffffff77;
+  }
+
+  .COVER .titleCover {
+    font-size: 19px;
+  }
+
+  .COVER .date p,
+  .COVER .time,
+  .COVER .dateCover {
+    font-size: 17px;
+  }
+
+  .COVER .time {
+    color: rgb(255, 145, 0);
+  }
+
+  .imgHeaderAboutUs1 img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .buttonDiscoverMore button {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 31px;
+  }
+
+  .CoverImage button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .MenuFooter ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .MenuFooter ul li {
+    font-size: 14px;
+  }
+
+  .bannerleftside .date p {
+    font-size: 30px;
+  }
+
+  .bannerleftside .name h2 {
+    font-size: 23px;
+  }
+
+  .bannerleftside .year p {
+    font-size: 19px;
+  }
+
+  .driveyoursoul {
+    padding: 22px 12px;
+  }
+
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 19px;
+  }
+
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 15px;
+  }
+
+  .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 7px 13px;
+    font-size: 13px;
+  }
+
+  .ahmedmatter {
+    height: 62vh;
+    max-width: 92%;
+    padding: 10px 18px;
+  }
+
+  .nameAhmedmatter p {
+    font-size: 27px;
+  }
+
+  .yearahmedmatter p {
+    font-size: 15px;
+  }
+
+  .dateAhmedmaater p {
+    font-size: 15px;
+  }
+
+  .ahmedHiglight {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 20px auto;
+    padding: 0 18px;
+  }
+
+  .buttonDiscoverMoreYourown button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .LukumContiner .title h4 {
+    font-size: 21px;
+  }
+
+  .pastExhibitLukum {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .pastExhibitLukum img {
+    width: 92%;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .ExploreCoverLakum {
+    height: 65vh;
+    width: 92%;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 26px;
+  }
+
+  .CoverImage button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  .upcomingEventCalender {
+    padding: 10px;
+  }
+
+  .titleupcomingEventCalender h3 {
+    font-size: 21px;
+  }
+
+  .COVERCalender {
+    padding: 12px;
+    margin-top: -45px;
+  }
+
+  .COVERCalender .titleCoverCalender {
+    font-size: 19px;
+  }
+
+  .COVERCalender .timeCalender {
+    font-size: 15px;
+  }
+
+  .buttonDiscoverMoreCalender button {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .LandingPageCover {
+    height: 100vh;
+  }
+
+  .titleLandingPage h4 {
+    font-size: 22px;
+    padding: 0 12px;
+  }
+.ColumnContainer{
+  gap: 3px;
+}
+.PhotoEventRowLong span,
+.PhotoEventRow span,
+.PhotoEventRowShort span {
+  font-size: 12px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.PhotoEventColumn p {
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.PhotoEventColumn i{
+  font-size: 10px;
+}
+  .buttonLandingPage button {
+    font-size: 13px;
+    padding: 9px 22px;
+  }
+
+  .slider-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    height: 220px;
+  }
+
+  .nav {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .Space {
+    height: 36vh;
+    max-width: 100%;
+  }
+
+  .nameSpace p {
+    font-size: 18px;
+  }
+
+  .nameSpace p span {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    padding: 12px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 8px 8px 8px 30px;
+    font-size: 13px;
+  }
+
+  .ButtonFormRow {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .generic_feature_list ul li {
+    font-size: 15px;
+  }
+
+  .generic_price_btn a {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+
+  .SpaceVENUMContainer .titleSpaceVenum h4 {
+    font-size: 19px;
+  }
+
+  .LeftText p {
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+
+  .logo a {
+    font-size: 18px;
+  }
+
+  .logo p {
+    font-size: 11px;
+  }
+
+  .MenuHeader ul li a{
+    font-size: 14px;
+  }
+  .aboutUs {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 20px;
+  }
+.paragraphbanner{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+  .paragraphAboutUs p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+   .aboutUs {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 20px;
+  }
+
+  .paragraphAboutUs p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 100%;
+  }
+   .bannerText h2 {
+    font-size: 22px;
+  }
+ .PhotoEventRow p {
+    font-size: 18px;
+  }
+
+  .PhotoEventRow img {
+    max-width: 100%;
+    height: auto;
+  }
+ .PhotoEventColumn {
+    flex: 1 1 100%; /* force full width */
+  }
+
+  .PhotoEventRow img {
+    width: 100%;
+    height: auto;
+  }
+
+  .PhotoEventRow p {
+    font-size: 16px; /* smaller text for readability */
+  }
+
+  .titlePreviousEventWrapper h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .titlePreviousEventWrapper h4 {
+    font-size: 20px; /* shrink title */
+    text-align: center; /* keep it clean on tiny screens */
+  }
+  .bannerText p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .banner {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+   .numberCount {
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .numberCount a {
+    font-size: 24px;
+  }
+
+  .numberCount p {
+    font-size: 14px;
+  }
+  .bannnerArtPaceGallary .Higlight {
+    font-size: 28px;
+  }
+
+  .bannnerArtPaceGallary p:not(.Higlight) {
+    font-size: 16px;
+  }
+    .scrollTrack img {
+    height: 40px;
+  }
+  .upcomingEvents {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;          /* tighter gap for small space */
+    margin: 15px;
+  }
+
+  .eventItem {
+    width: 100%;        /* full width */
+    max-width: 340px;   /* keep nice fit inside screen */
+  }
+
+  .titleBox {
+    font-size: 16px;    /* smaller text for readability */
+  }
+.EXHIBITIONPREVIUSCONTAINER h4{
+  font-size: 18px;
+  margin-left: 20px;
+}
+  .dateBox {
+    padding: 3px 15px;  /* smaller date box */
+    font-size: 11px;
+  }
+  .upcomingEvent {
+    padding: 15px 15px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+.ComingEventContainerLAKUM{
+  max-width: 100%;
+}
+    .eventItem {
+    flex: 1 1 100%;          /* full width */
+    max-width: 100%;
+  }
+
+  .dateBox {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .titleBox {
+    font-size: 18px;
+  }
+  .COVER .date p{
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size:18px;
+ 
+}
+.COVER .titleCover {
+  font-size: 18px;
+  margin:5px 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;  font-weight: 500;
+}
+ .COVER {
+    margin-left: -400px;       /* remove margin for small screens */
+    width: 100%;          /* full width */
+    height: auto;         /* adjust height */
+    padding: 15px 20px;
+    background: #ffffff77;
+  }
+.COVER .date {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+ 
+}
+.COVER .time{
+  color: rgb(255, 145, 0);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+}
+ .imgHeaderAboutUs1 img {
+    width: 250px;
+    height: 250px;
+   
+  }
+.COVER .dateCover{
+  color: rgb(121, 121, 121);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    font-weight: 300;
+}
+
+.buttonDiscoverMore {
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonDiscoverMore button{
+  padding: 10px 20px;
+  font-size:15px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+ font-weight: 300;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+    border-radius: 5px;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease;
+}
+.CoverImageLakum h4{
+  font-size: 30px;
+}
+.CoverImage button{
+  padding: 12px 18px;
+  font-size: 15px;
+  border: 1px solid #a8a8a0;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    max-width: 100%;
+  }
+
+  .MenuFooter ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .MenuFooter ul li {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+.bannerAhmedMatter{
+  padding: 0;
+  margin: 0;
+}
+  .social-icons {
+    justify-content: center;
+  }
+     .bannerleftside .date p { font-size: 28px; }
+  .bannerleftside .name h2 { font-size: 22px; }
+  .bannerleftside .year p { font-size: 18px; }
+
+  .bannerrightside { height: 200px; margin:0; }
+.driveyoursoul {
+    padding: 20px 10px;
+  }
+
+.driveyoursoul  .titledriveyoursoul h4 {
+    font-size: 18px;
+  }
+
+ .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 14px;
+  }
+
+ .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+.bannerDrivenYourSoul {
+    flex-direction: column; /* stack vertically */
+    gap: 10px;
+    
+  }
+
+  .bannerleftsideDrivenYourSoul {
+    width: 100%;
+    height: 180px; /* smaller image height */
+  }
+
+  .bannerrightsideDrivenYourSoul {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bannerrightsideDrivenYourSoul .datebanner p {
+    font-size: 16px;
+  }
+
+  .bannerrightsideDrivenYourSoul .namebanner h2 {
+    font-size: 14px;
+  }
+
+  .bannerrightsideDrivenYourSoul .yearbanner p {
+    font-size: 12px;
+  }
+  .bannerrightsideDrivenYourSoul .paragraphbanner{
+    width: 80%;
+  }
+ .bannerrightsideDrivenYourSoul .paragraphbanner p {
+    font-size: 12px;
+    
+  }
+.buttonDiscoverMoreDriveYourSoulCoverBanner button {
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: transparent;
+  border: #727272 solid 1px;
+  color: black;
+  font-weight: 300;
+font-family: "Atyp Kido TRIAL";  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.buttonDiscoverMoreDriveYourSoulCoverBanner a {
+ text-decoration: none;
+ color: #000;
+}
+
+.buttonDiscoverMoreDriveYourSoulCoverBanner button:hover {
+  background-color: #727272;
+}
+  .buttonDiscoverMoreDriveYourSoulCoverBanner
+  .upComingExhibitions .titleExhibitions h4 {
+    margin-left: 10px;
+    font-size: 15px;
+    
+  }
+
+  .upComingExhibitions .line {
+    width: 90%;
+  }
+  .upcomingContianer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+  }
+   .upcomingContianer1{
+    display: flex;
+    flex-direction: column;
+  }
+ .ComingEventContainerAboutUs {
+  margin-left: -180px;
+  display: none;
+ }
+
+ .upcomingEventAboutUs1 {
+   
+    padding: 10px 15px;
+    
+  }
+ 
+  .COVERAboutUs {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    background: #ffffff3b;
+     margin-left:0px;
+  }
+.COVERAboutUs1 {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    padding: 8px;
+    flex-direction: row; /* keep date + info side by side */
+    align-items: center;
+  }
+  .COVERAboutUs1 .leftColumn {
+    padding-left: 5px;
+    min-width: 60px;
+  }
+.COVERAboutUs1 .dateAboutUs p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+   .COVERAboutUs1 .dateAboutUs .pnumber {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .COVERAboutUs1 .rightColumn {
+    padding-left: 10px;
+    gap: 4px;
+  }
+
+  .COVERAboutUs1 .titleCoverAboutUs p {
+    font-size: 18px;
+  }
+
+  .COVERAboutUs1 .timeAboutUs p {
+    font-size: 14px;
+  }
+
+  .COVERAboutUs1 .dateCoverAboutUs p {
+    font-size: 12px;
+  }
+  .COVERAboutUs .dateAboutUs p  {
+    font-size: 18px;
+   
+  }
+.COVERAboutUs .dateAboutUs .pnumber{
+  font-size: 30px;
+}
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 14px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 14px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 10px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .ContainerYourown {
+
+    padding: 40px 15px;
+  }
+
+  .ContainerYourown .titleYourown h4 {
+    width: 100%;
+    font-size: 18px;
+  }
+ .imgHeaderAboutUs img {
+    width: 100%;
+    height:auto;
+    display: none;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+   .eventImageWrapper img {
+    height: 180px;
+  }
+
+  .eventOverlay {
+    width: 95%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .eventDate {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .eventDate .month {
+    font-size: 14px;
+  }
+
+  .eventDate .day {
+    font-size: 22px;
+  }
+
+  .eventInfo {
+    gap: 4px;
+    align-items: center;
+  }
+
+  .eventInfo .eventTitle {
+    font-size: 16px;
+  }
+
+  .eventInfo .eventTime {
+    font-size: 14px;
+  }
+
+  .eventInfo .eventRange {
+    font-size: 12px;
+  }
+
+  .discoverButton {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .ahmedmatter {
+    width: 100%;
+    max-width: 100%;
+    height: 60vh; /* shorter banner */
+    padding: 10px 15px;
+  }
+  .dateAhmedmaater p {
+    font-size: 16px;
+  }
+  .nameAhmedmatter p {
+    font-size: 28px;
+  }
+  .yearahmedmatter p {
+    font-size: 14px;
+  }
+   .ahmedHiglight {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 20px auto;
+    padding: 0 15px;        /* ensure no overflow */
+  }
+ .buttonDiscoverMoreYourown button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+    .LukumContiner .title h4 {
+    margin-left: 0px;
+    font-size: 20px;
+    padding-top: 50px;
+  }
+
+  .pastExhibitLukum {
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 20px;
+  }
+
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgMiddle,
+  .pastExhibitLukum .imgright {
+    flex: 1 1 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .pastExhibitLukum .imgleft img,
+  .pastExhibitLukum .imgright img,
+  .pastExhibitLukum .imgMiddle img {
+    height: auto;
+    width: 90%;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0 20px 0;
+  }
+ .imgHeaderLakum img {
+    height: 250px;          /* smaller image */
+  }
+  .previousEventContainer {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .titlePreviousEventContainer h4 {
+    font-size: 1rem;
+  }
+ 
+  
+   .imgHeaderLakum{
+border-radius: 0px;
+   }
+  .imgHeaderLakum img {
+    height: 450px;
+    
+  }
+
+  .COVERLAKUM {
+    width: 90%;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 15px;
+    border-radius: 0px;
+  }
+
+  .COVERLAKUM .titleCOVERLAKUM p {
+    font-size: 20px;
+    
+  }
+
+  .COVERLAKUM .date p {
+    font-size: 14px;
+    margin-top: -5px;
+  }
+
+  .COVERLAKUM .paragraphCOVERLAKUM p {
+    font-size: 12px;
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+
+  .buttonDiscoverMoreLAKUM {
+    bottom: 20px;
+    left: 120px;
+    width: 150px;
+    border-radius: 0px;
+  }
+
+  .buttonDiscoverMoreLAKUM button {
+    font-size: 12px;
+    border-radius: 0px;
+    padding: 6px 15px;
+  }
+
+  .buttonDiscoverMoreLAKUMLEFT {
+    bottom: 20px;
+    left: 120px;
+    width: 150px;
+    border-radius: 0px;
+  }
+
+  .buttonDiscoverMoreLAKUMLEFT button {
+    font-size: 12px;
+    border-radius: 0px;
+    padding: 6px 15px;
+  }
+  .titlePreviousEventWrapper{
+    
+    margin-right: -25px;
+    margin-bottom: -100px;
+  }
+.titlePreviousEventContainer h4 {
+    font-size: 20px;
+    margin-left: 15px;
+    padding-top: 0px;
+    margin-bottom: -30px;
+  }
+
+  .hrLine {
+    margin-left: 15px;
+      display: none;
+  }
+
+  
+.ColumnContainer {
+  gap: 5px;
+ max-width: 90%;
+  margin-top: 10;
+ 
+}
+
+.PhotoEventRowLong img,
+.PhotoEventRow img,
+.PhotoEventRowShort img {
+  max-width: 100%;
+  height: auto;
+}
+
+.PhotoEventRowLong span,
+.PhotoEventRow span,
+.PhotoEventRowShort span {
+  font-size: 12px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.PhotoEventColumn p {
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.PhotoEventColumn i {
+  display: none;
+  font-size: 16px;
+  padding: 4px;
+  color: #000;
+}
+
+   .titlePreviousEventContainer h4 {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .hrLine {
+    margin-left: 10px;
+  }
+  .PhotoEventColumn {
+    padding-left: 5px;
+    gap: 15px;
+  }
+  .PhotoEventColumn p {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .PhotoEventColumn i {
+    font-size: 16px;
+    padding: 4px;
+  }
+  .upcomingEventCalender {
+    padding: 10px 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .titleupcomingEventCalender h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .imgHeader1Calender {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .imgHeader1Calender img {
+    width: 100%;
+    border-radius: 10px;
+  }
+.eventsList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  gap: 30px;
+}
+
+  /* Overlay Cover stacked under image */
+  .COVERCalender {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: -50px; /* slight overlap for visual effect */
+    box-sizing: border-box;
+  }
+
+  .COVERCalender .dateCalender {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .COVERCalender .dateCalender p {
+    font-size: 20px;
+  }
+
+  .COVERCalender .titleCoverCalender {
+    font-size: 18px;
+  }
+
+  .COVERCalender .timeCalender {
+    font-size: 14px;
+  }
+
+  .COVERCalender .dateCoverCalender {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreCalender button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .COVERCalender {
+    position: relative;
+    padding: 10px;
+    border-radius: 0;
+    margin-top: -50px; /* overlap effect */
+  }
+
+  .ROWdate {
+    flex-direction: row;
+  }
+
+  .dateCalender {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .titleCalender {
+    font-size: 14px;
+  }
+
+  .timeCalender {
+    font-size: 12px;
+  }
+
+  .dateCoverCalender {
+    font-size: 10px;
+  }
+
+  .buttonDiscoverMoreCalender button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+   .titlePreviousEventContainer h4 {
+    font-size: 1rem;  /* smaller heading */
+  }
+
+  .PhotoEventColumn {
+    grid-template-columns: repeat(1, 1fr); /* single column */
+    gap: 15px; /* tighter spacing */
+  }
+
+  
+   .previousEventContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .titlePreviousEventContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .titlePreviousEventContainer h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hrLine {
+    width: 50%;
+    max-width: 120px;
+  }
+
+  .PhotoEventColumn {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .PhotoEventRow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+    .imgHeaderLakum img {
+    height: 450px;
+  }
+
+  .COVERLAKUM {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .COVERLAKUM .titleCOVERLAKUM p {
+    font-size: 20px;
+  }
+
+  .COVERLAKUM .date p {
+    font-size: 14px;
+  }
+
+  .COVERLAKUM .paragraphCOVERLAKUM p {
+    font-size: 12px;
+  }
+
+  .buttonDiscoverMoreLAKUM button {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+ .LandingPageCover {
+    height: 100vh; /* full viewport height */
+  }
+
+  .titleLandingPage h4 {
+    font-size: 22px; /* smaller text for small screen */
+    padding: 0 10px; /* optional padding so text doesn't touch edges */
+  }
+
+  .buttonLandingPage button {
+    font-size: 12px; /* smaller button text */
+    padding: 8px 20px; /* smaller button padding */
+  }
+
+  .card { flex: 0 0 100%; height: 220px; }
+  .slider-container { width: 100%; align-items: center; }
+  .nav { width: 35px; height: 35px; font-size: 20px; }
+  .nameAhmedmatter p { font-size: 26px; }
+  .yearahmedmatter p { font-size: 16px; }
+  .dateAhmedmaater p { font-size: 14px; }
+  .ahmedHiglight { font-size: 14px; padding: 0 10px; }
+  .HiglihtAhmedMatter h4,
+  .HiglihtAhmedMatter h4 span {
+    font-size: 20px;
+  }
+  
+  .HiglihtAhmedMatter button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .CollectionSpace p { font-size: 12px; padding: 5px 0px; }
+ .Space { height: 35vh; max-width: 100%; }
+
+
+.nameSpace {
+  position: relative;
+  z-index: 2;
+  margin: 5px 0;
+}
+
+  .nameSpace p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .nameSpace p span {
+    font-size: 15px;
+  }
+
+ 
+
+  .contact-form {
+    padding: 10px;
+    border-radius: 0;
+    margin: 20px auto;
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .form-group label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 8px 8px 8px 30px; /* smaller padding for small screen */
+    font-size: 12px;
+  }
+
+  .input-icon i {
+    left: 8px;
+    font-size: 12px; /* smaller icon */
+  }
+
+  .ButtonFormRow {
+    font-size: 14px;
+    padding: 12px;
+  }
+  #generic_price_table {
+    padding: 40px 20px;
+  }
+  .generic_head_price {
+    padding: 40px 15px 15px;
+  }
+  .generic_head_content .head span {
+    font-size: 18px;
+  }
+  .generic_price_tag .price {
+    font-size: 20px;
+  }
+  .generic_feature_list ul li {
+    font-size: 14px;
+  }
+  .generic_price_btn a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+ .SpaceVENUMContainer   .titleSpaceVenum h4 {
+    font-size: 18px;
+  }
+  .LeftText p {
+    font-size: 14px;
+  }
+  /* Title */
+  .LukumContiner{
+   margin-left:-5px;
+  }
+  .LukumContiner .title h4 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Container */
+  .pastExhibitLukum {
+    flex-direction: column; /* stack all images */
+    align-items: center;
+    gap: 15px; /* smaller gap for small screens */
+    margin-left: 0;
+    max-width: 90%;
+    justify-content: center;
+  }
+
+  /* Each image block */
+  .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgMiddle,
+  .pastExhibitLukum .imgright {
+    max-width: 95%; /* almost full width */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Images */
+  .pastExhibitLukum img {
+    max-width: 100%;
+    height: 180px; /* smaller for mobile */
+    object-fit: cover;
+    
+  }
+
+  /* Text under images */
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .ExploreCoverLakum {
+    height: 60vh;
+    width: 100%;
+    padding: 0 0px;
+  }
+
+  .CoverImageLakum h4 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .CoverImage button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+  .upcomingContianerAboutUs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px auto;
+    
+  }
+
+  .ComingEventContainerAboutUsPage {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .imgHeaderAboutUsPage img {
+    max-height: 220px;
+  }
+ .driveyoursoul {
+    padding: 20px 10px;
+    gap: 10px;
+  }
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 22px;
+  }
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 16px;
+  }
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+   .upcomingEventAboutUsPage { width: 100%; padding: 5px; }
+  .titleCoverAboutUsLakum p { font-size: 18px; }
+  .pnumber { font-size: 32px; }
+  .COVERAboutUsPageLukum { padding: 8px; gap: 8px; }
+
+  .titleLandingPage h4 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .buttonLandingPage button {
+    font-size: 14px;
+    padding: 10px 18px;
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+  }
+   .ContainerSlide1 {
+    flex-direction: column; /* stack slides vertically if needed */
+    justify-content: center; /* center content */
+    margin-top: 20px; /* reduce spacing for mobile */
+    padding: 0 10px; /* small padding for edges */
+  }
+.price-heading h1{
+  font-size: 20px;
+}
+  .slider-container1 {
+    max-width: 100%; /* fill full screen */
+    overflow-x: scroll; /* allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  }
+
+  /* Optional: if you have individual slides */
+  .slider-container1 .slide {
+    min-width: 90%; /* make slides fit nicely on mobile */
+    margin-right: 10px;
+  }
+
+    .price-heading h1 {
+    font-size: 20px;
+  }
+
+  .flex-container {
+    gap: 20px;
+  }
+
+  .generic_head_price {
+    padding: 30px 10px 10px;
+  }
+
+  .generic_head_content .head span {
+    font-size: 16px;
+  }
+
+  .generic_price_tag .price {
+    font-size: 18px;
+  }
+
+  .generic_feature_list ul li {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .generic_price_btn a {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .generic_img {
+    height: 160px;
+  }
+
+  .price-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .currency-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+   .contact-form {
+    max-width: 100%;       /* full width */
+    margin: 20px auto;
+    padding: 15px;         /* even smaller padding */
+  }
+
+  .form-row {
+    gap: 12px;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .input-icon input,
+  .input-icon textarea {
+    padding: 10px 10px 10px 34px; /* smaller padding for icon */
+    font-size: 12px;
+  }
+
+  .input-icon i {
+    font-size: 13px;
+    left: 8px;
+  }
+
+  .input-icon textarea {
+    min-height: 90px;      /* smaller textarea */
+  }
+
+  .ButtonFormRow {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
