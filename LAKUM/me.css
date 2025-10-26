@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  background: #fafafa;
+  background: #f6f6eb;
 }
 
 /* ===== GRID LAYOUT ===== */
@@ -21,7 +21,7 @@
 .overlay1 {
   display: flex;
   flex-direction: column;
-  background: #fff;
+background: #f6f6eb;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);

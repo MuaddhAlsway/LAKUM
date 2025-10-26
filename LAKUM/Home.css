@@ -278,6 +278,123 @@ background-color: #f6f6eb;
   color: #555;
   line-height: 1.4;
 }
+.ForOurClient{
+  width: 100%;
+}
+.titleForOurClient {
+  margin-left: 100px;
+}
+
+.titleForOurClient h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* For large tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .titleForOurClient {
+    margin-left: 80px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .titleForOurClient h4 {
+    font-size: 22px;
+  }
+}
+
+/* Common tablet widths */
+@media (max-width: 820px) {
+  .titleForOurClient {
+    margin-left: 60px;
+     display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .titleForOurClient h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleForOurClient {
+    margin-left: 50px;
+     display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .titleForOurClient h4 {
+    font-size: 22px;
+  }
+}
+
+/* Smaller tablets / large phones */
+@media (max-width: 540px) {
+  .titleForOurClient {
+    margin-left: 30px;
+    
+  }
+  .titleForOurClient h4 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 490px) {
+  .titleForOurClient {
+    margin-left: 20px;
+  }
+  .titleForOurClient h4 {
+    font-size: 16px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px) {
+  .titleForOurClient {
+    margin-left: 15px;
+  }
+  .titleForOurClient h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 414px) {
+  .titleForOurClient {
+    margin-left: 12px;
+  }
+  .titleForOurClient h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 412px) {
+  .titleForOurClient {
+    margin-left: 152px;
+  }
+  .titleForOurClient h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .titleForOurClient {
+    margin-left: 10px;
+  }
+  .titleForOurClient h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .titleForOurClient {
+    margin-left: 8px;
+  }
+  .titleForOurClient h4 {
+   font-size: 15px;
+  }
+}
+
 .infiniteSlider {
   width: 99vw;
   overflow: hidden;
@@ -1453,14 +1570,15 @@ font-family: "Atyp Kido TRIAL";
   flex: 1;
   min-width: 450px;
   display: flex;
-  justify-content: center;
+  justify-content:flex-end;
   align-items: center;
+  
 }
 
 .imgRightSpaceVenum img {
   width: 60%; /* scale down to container width */
   height: 50%;    /* maintain aspect ratio */
-  border-radius: 8px;
+  
   object-fit: cover; /* optional: crop if needed */
 }
 
@@ -2316,7 +2434,7 @@ button[type="submit"]:hover {
   background-color: #727272;
 }
 #generic_price_table {
-  background-color: #f0eded;
+  background-color: #f6f6eb;
   padding: 60px 200px; /* left and right space */
   box-sizing: border-box;
 }
@@ -2355,7 +2473,7 @@ button[type="submit"]:hover {
 
 /* Cards */
 .generic_content {
-  background-color: #fff;
+  background-color: #f6f6eb;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -2375,7 +2493,7 @@ button[type="submit"]:hover {
 }
 
 .generic_head_price {
-  background-color: #f6f6f6;
+  background-color: #f6f6eb;
   padding: 60px 20px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -2391,7 +2509,7 @@ button[type="submit"]:hover {
   margin: 0 auto;
   top: 0;
   width: 100%;
-  border-color: #e4e4e4 transparent transparent #e4e4e4;
+  border-color: #f6f6eb transparent transparent #f6f6eb;
 }
 
 .generic_head_content .head span {
@@ -2433,7 +2551,7 @@ button[type="submit"]:hover {
 }
 
 .generic_feature_list ul li:hover {
-  background-color: #E4E4E4;
+
   border-left: 5px solid #aaa;
   padding-left: 10px;
   transition: all 0.3s ease-in-out;
@@ -4092,6 +4210,293 @@ button[type="submit"]:hover {
   /* Title adjustments */
   
 }
+@media (max-width: 1366px) {
+  /* Menu */
+  .Menu {
+    display: none; /* hidden by default */
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .Menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .ri-close-line {
+    display: none;
+  }
+
+  .Menu.active {
+    display: block;
+  }
+
+  .ri-close-line.active {
+    display: block;
+  }
+
+  .ri-menu-line.hide {
+    display: none;
+  }
+
+  /* About Us Section */
+  .aboutUs {
+    flex-direction: row; /* keep row on larger 1366px */
+    align-items: flex-start;
+    padding: 30px;
+    text-align: left;
+    gap: 30px;
+  }
+
+  .textAboutUs {
+    max-width: 60%;
+  }
+
+  .titleAboutUs h4 {
+    font-size: 28px;
+  }
+
+  .paragraphAboutUs p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .imgAboutUs img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: row;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .bannerText,
+  .bannerImage {
+    max-width: 50%;
+  }
+
+  .bannerText h2 {
+    font-size: 32px;
+  }
+
+  .bannerText p {
+    font-size: 18px;
+  }
+
+  /* Number Count Section */
+  .numberCount {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .numberCount a {
+    font-size: 32px;
+  }
+
+  .numberCount p {
+    font-size: 18px;
+  }
+
+  /* Upcoming Events */
+  .upcomingEvents {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .eventItem {
+    width: 48%; /* 2 items per row */
+    max-width: 500px;
+  }
+
+  .titleBox {
+    font-size: 22px;
+  }
+
+  .dateBox {
+    padding: 10px 35px;
+    font-size: 14px;
+  }
+
+  .upcomingEvent {
+    padding: 25px 35px;
+  }
+
+  .titleupcomingEvent h3 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  /* Banner Ahmed Matter */
+  .bannerAhmedMatter {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+  }
+
+  .bannerleftside {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .bannerleftside .date p {
+    font-size: 42px;
+  }
+
+  .bannerleftside .name h2 {
+    font-size: 30px;
+  }
+
+  .bannerleftside .year p {
+    font-size: 22px;
+  }
+
+  .bannerrightside {
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  /* Drive Your Soul Section */
+  .driveyoursoul .titledriveyoursoul h4 {
+    font-size: 32px;
+  }
+
+  .driveyoursoul .higlightdriveyoursoul p {
+    font-size: 26px;
+  }
+
+  .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+
+  /* Covers */
+  .COVER,
+  .COVER1 {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .COVERAboutUs {
+    left: 0;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+  }
+
+  .COVERAboutUs .dateAboutUs p {
+    font-size: 32px;
+  }
+
+  .COVERAboutUs .titleCoverAboutUs p {
+    font-size: 24px;
+  }
+
+  .COVERAboutUs .timeAboutUs p {
+    font-size: 18px;
+  }
+
+  .COVERAboutUs .dateCoverAboutUs p {
+    font-size: 14px;
+  }
+
+  .buttonDiscoverMoreDriveYourSoul button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  /* Photos & Events */
+  .PhotoEventColumn {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .PhotoEventRow img,
+  .PhotoEventRowLong img,
+  .PhotoEventRowShort img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .PhotoEventRowLong p,
+  .PhotoEventRow p,
+  .PhotoEventRowShort p {
+    font-size: 18px;
+  }
+
+  /* Past Exhibits */
+  .pastExhibitLukum {
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .pastExhibitLukum img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .pastExhibitLukum p {
+    font-size: 18px;
+  }
+
+    .pastExhibitLukum .imgleft,
+  .pastExhibitLukum .imgright,
+  .pastExhibitLukum .imgMiddle {
+    max-width: 32%; /* roughly 3 images per row */
+    height: auto;
+  }
+
+  /* Images overall */
+  .pastExhibitLukum img {
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+  }
+
+  /* Text */
+  .pastExhibitLukum p,
+  .pastExhibitLukum .imgMiddle p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Lukum Container Title */
+  .LukumContiner .title h4 {
+    font-size: 26px; /* slightly bigger for larger screens */
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Header Image */
+  .imgHeader1 {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 
 @media (max-width: 1024px) {
@@ -4900,6 +5305,7 @@ button[type="submit"]:hover {
     padding: 20px 30px;
   }
 
+
   .titleupcomingEvent h3 {
     font-size: 25px;
     text-align: center;
@@ -5027,7 +5433,7 @@ button[type="submit"]:hover {
   }
   .ExploreCoverLakum {
     height: 70vh;
-    width: 100%;
+    width: 95%;
     padding: 0 20px;
   }
 
@@ -5422,10 +5828,12 @@ button[type="submit"]:hover {
     justify-content: center;
   }
 }
+
 /* ---------- Responsive Design for 412px ---------- */
 @media (max-width: 430px) {
   .HomeContainer {
     width: 100%;
+    
   }
 
   .logo a {
@@ -5827,17 +6235,42 @@ button[type="submit"]:hover {
   .SpaceVENUMContainer .titleSpaceVenum h4 {
     font-size: 20px;
   }
+.ExploreCoverLakum {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 91%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 0;
+}
 
+.ComingEventContainerLAKUM{
+
+  width: 100%;
+}
   .LeftText p {
     font-size: 16px;
   }
 }
 
 @media (max-width: 414px) {
+  
   .logo a {
     font-size: 19px;
   }
+.ComingEventContainerLAKUM{
 
+  width: 100%;
+  max-width: 100%;
+}
   .logo p {
     font-size: 12px;
   }
@@ -5851,11 +6284,23 @@ button[type="submit"]:hover {
 .COVERLAKUM .date p{
 margin-top: 0.1px;
 }
-  .ExploreCoverLakum {
-    height: 60vh;
-   width: 100%;
-   max-width:95%;
-  }
+.ExploreCoverLakum {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+  /* hero look */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 0;
+}
   .CoverImage{
     width:100%;
     max-width: 100%;
@@ -5904,7 +6349,7 @@ margin-top: 0.1px;
   .PhotoEventColumn {
     flex: 1 1 100%;
     gap: 20px;
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .titlePreviousEventWrapper h4 {
@@ -6019,7 +6464,7 @@ margin-top: 0.1px;
   }
 
   .CoverImageLakum h4{
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .CoverImage button{
@@ -6049,7 +6494,11 @@ margin-top: 0.1px;
     margin-bottom: 5px;
     font-size: 14px;
   }
-
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   .bannerleftside .date p { font-size: 30px; }
   .bannerleftside .name h2 { font-size: 24px; }
   .bannerleftside .year p { font-size: 20px; }
@@ -6066,7 +6515,23 @@ margin-top: 0.1px;
   .driveyoursoul .higlightdriveyoursoul p {
     font-size: 15px;
   }
-
+.previousEventContainer{
+  margin-left: 5px;
+  padding: 0px;
+ 
+}
+ .PhotoEventColumn{
+  padding: 0px;
+  margin: 0px;
+  margin-left: -3px;
+ }
+.ColumnContainer{
+ margin-top: -60px;
+}
+.PhotoEventRow i{
+  font-size: 10px;
+  padding: 5px;
+}
   .driveyoursoul .buttonDiscoverMoreDriveYourSoul button {
     padding: 7px 14px;
     font-size: 13px;
@@ -6118,11 +6583,13 @@ margin-top: 0.1px;
   .pastExhibitLukum .imgright img,
   .pastExhibitLukum .imgMiddle img {
     height: auto;
-    width: 92%;
+    width: 100%;
+    margin-left: -20px;
   }
 
   .imgHeaderLakum img {
     height: 470px;
+   
   }
 
   .COVERLAKUM {
@@ -6133,6 +6600,22 @@ margin-top: 0.1px;
   .COVERLAKUM .titleCOVERLAKUM p {
     font-size: 22px;
   }
+.ExploreCoverLakum {
+  position: relative;
+  background-image: url("assest/img-3.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 0;
+}
 
   .COVERLAKUM .date p {
     font-size: 15px;
@@ -6205,7 +6688,7 @@ margin-top: 0.1px;
 @media (max-width: 390px) {
   .HomeContainer {
    width: 100%;
-   
+  
   }
 
   .logo a {
@@ -6474,7 +6957,7 @@ margin-top: 0.1px;
 
   .ExploreCoverLakum {
     height: 65vh;
-    width: 92%;
+    width: 90%;
   }
 
   .CoverImageLakum h4 {
@@ -6519,9 +7002,11 @@ margin-top: 0.1px;
   .titleLandingPage h4 {
     font-size: 22px;
     padding: 0 12px;
+    margin-bottom: -100px;
   }
 .ColumnContainer{
   gap: 3px;
+  margin-left: 10px;
 }
 .PhotoEventRowLong span,
 .PhotoEventRow span,
@@ -6530,7 +7015,9 @@ margin-top: 0.1px;
   flex-direction: row;
   justify-content: flex-start;
 }
-
+.PhotoEventColumn{
+  margin-top: -100px;
+}
 .PhotoEventColumn p {
   font-size: 14px;
   flex-wrap: wrap;
@@ -7424,14 +7911,7 @@ border-radius: 0px;
     gap: 15px; /* tighter spacing */
   }
 
-  
-   .previousEventContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-    gap: 20px;
-  }
+
 
   .titlePreviousEventContainer {
     flex-direction: column;
