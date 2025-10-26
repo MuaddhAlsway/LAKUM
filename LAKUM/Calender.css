@@ -8,3 +8,282 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+.calendarContainer {
+  display: flex;
+  gap: 40px;
+  padding: 40px 100px;
+  min-height: 60vh;
+}
+
+.monthsSidebar {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.monthsSidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.monthsSidebar li {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.monthsSidebar li:hover {
+  background: #e0e0e0;
+}
+
+.monthsSidebar li.active {
+  background: #000;
+  color: white;
+}
+
+.eventsList {
+  flex: 1;
+}
+
+.firstRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.eventItem {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.eventItem:hover {
+  transform: translateY(-5px);
+}
+
+.imgWrapperCalender {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imgWrapperCalender img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dateBoxCalender {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dateBoxCalender p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.dateBoxCalender p:last-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.titleBox {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.upcomingEventCalender {
+  padding: 40px 100px;
+  background: #f6f6eb;
+}
+
+.ComingEventContainerCalender {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.upcomingEventAboutUs {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ComingEventContainerAboutUs {
+  position: relative;
+  width: 100%;
+}
+
+.imgHeaderAboutUs {
+  position: relative;
+  width: 100%;
+}
+
+.imgHeaderAboutUs img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.COVERAboutUs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f6f6eb;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+}
+
+.dateAboutUs p {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  line-height: 1.2;
+}
+
+.dateAboutUs .pnumber {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  flex: 1;
+}
+
+.titleCoverAboutUs p {
+  font-size: 24px;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.timeAboutUs p {
+  color: rgb(248, 166, 58);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+.dateCoverAboutUs p {
+  color: rgb(150, 150, 150);
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.buttonDiscoverMoreDriveYourSoulComing {
+  margin-top: 10px;
+}
+
+.buttonDiscoverMoreDriveYourSoulComing button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #727272;
+  color: black;
+  font-weight: 300;
+  font-family: 'Atyp Kido TRIAL', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonDiscoverMoreDriveYourSoulComing button:hover {
+  background-color: #727272;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .calendarContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .monthsSidebar {
+    width: 100%;
+  }
+  
+  .monthsSidebar ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .monthsSidebar li {
+    white-space: nowrap;
+  }
+  
+  .firstRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .upcomingEventCalender {
+    padding: 20px;
+  }
+  
+  .ComingEventContainerCalender {
+    grid-template-columns: 1fr;
+  }
+  
+  .imgHeaderAboutUs img {
+    height: 250px;
+  }
+  
+  .COVERAboutUs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .leftColumn {
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .dateAboutUs p {
+    font-size: 18px;
+  }
+  
+  .dateAboutUs .pnumber {
+    font-size: 32px;
+  }
+}

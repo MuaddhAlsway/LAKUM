@@ -1,0 +1,30 @@
+RewriteEngine On
+
+# Redirect to index.php if accessing root
+DirectoryIndex index.php
+
+# Allow access to admin folder
+RewriteCond %{REQUEST_URI} ^/admin/
+RewriteRule ^ - [L]
+
+# Allow access to api folder
+RewriteCond %{REQUEST_URI} ^/api/
+RewriteRule ^ - [L]
+
+# Allow access to assets
+RewriteCond %{REQUEST_URI} ^/(assest|uploads|Logo|HADAF\ Company|saudi\ arabia|Video)/
+RewriteRule ^ - [L]
+
+# Allow access to CSS and JS files
+RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|ico|svg|webp|JPG)$
+RewriteRule ^ - [L]
+
+# Redirect .html to .php if exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)\.html$ $1.php [L,R=301]
+
+# Security: Prevent access to config files
+<FilesMatch "^(database|setup)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
