@@ -29,9 +29,29 @@ while ($img = $images->fetch_assoc()) {
 
 $conn->close();
 
+// Format dates and times
 $event_date = date('d M', strtotime($event['event_date']));
 $event_year = date('Y', strtotime($event['event_date']));
-$date_range = $event['event_time'] ?: $event_date;
+
+// Build date/time display
+$date_time_display = $event_date;
+
+if (!empty($event['event_time'])) {
+    $start_time = date('H:i', strtotime($event['event_time']));
+    $date_time_display .= ' • ' . $start_time;
+}
+
+if (!empty($event['end_date']) && $event['end_date'] != $event['event_date']) {
+    $end_date = date('d M', strtotime($event['end_date']));
+    $date_time_display .= ' - ' . $end_date;
+}
+
+if (!empty($event['end_time'])) {
+    $end_time = date('H:i', strtotime($event['end_time']));
+    $date_time_display .= ' • ' . $end_time;
+}
+
+$location_display = !empty($event['location']) ? $event['location'] : '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +85,7 @@ $date_range = $event['event_time'] ?: $event_date;
 
     <div class="ahmedmatter" style="background-image: url('<?php echo $event['cover_image'] ?: 'assest/img-3.JPG'; ?>');">
         <div class="dateAhmedmaater">
-            <p><?php echo $date_range; ?></p>
+            <p><?php echo $date_time_display; ?></p>
         </div>
         <div class="nameAhmedmatter">
             <p><?php echo htmlspecialchars($event['title']); ?></p>
@@ -76,6 +96,15 @@ $date_range = $event['event_time'] ?: $event_date;
     </div>
 
     <div class="ahmedHiglight">
+        <?php if ($location_display): ?>
+        <div style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-left: 4px solid #000; border-radius: 5px;">
+            <p style="margin: 0; font-weight: 600; color: #333;">
+                <i class="ri-map-pin-line" style="margin-right: 8px;"></i>
+                <?php echo htmlspecialchars($location_display); ?>
+            </p>
+        </div>
+        <?php endif; ?>
+        
         <p><?php echo nl2br(htmlspecialchars($event['description'])); ?></p>
     </div>
 
