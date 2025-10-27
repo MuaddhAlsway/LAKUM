@@ -44,6 +44,9 @@ echo "<h2>Updating Events Table...</h2>";
 
 $queries = [
     "ALTER TABLE events MODIFY COLUMN status ENUM('upcoming', 'past') DEFAULT 'upcoming'",
+    "ALTER TABLE events ADD COLUMN IF NOT EXISTS end_date DATE AFTER event_time",
+    "ALTER TABLE events ADD COLUMN IF NOT EXISTS end_time VARCHAR(50) AFTER end_date",
+    "ALTER TABLE events ADD COLUMN IF NOT EXISTS video_link VARCHAR(500) AFTER location",
     "CREATE INDEX IF NOT EXISTS idx_event_date ON events(event_date)",
     "CREATE INDEX IF NOT EXISTS idx_status ON events(status)",
     "CREATE INDEX IF NOT EXISTS idx_created_at ON events(created_at)"

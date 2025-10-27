@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $end_date = $_POST['end_date'] ?? '';
     $end_time = $_POST['end_time'] ?? '';
     $location = $_POST['location'] ?? '';
+    $video_link = $_POST['video_link'] ?? '';
     
     if (!empty($title) && !empty($event_date)) {
         $conn = getDBConnection();
@@ -35,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         
         // Insert event
-        $stmt = $conn->prepare("INSERT INTO events (title, description, event_date, event_time, end_date, end_time, location, cover_image) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssss", $title, $description, $event_date, $event_time, $end_date, $end_time, $location, $cover_image);
+        $stmt = $conn->prepare("INSERT INTO events (title, description, event_date, event_time, end_date, end_time, location, video_link, cover_image) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssssss", $title, $description, $event_date, $event_time, $end_date, $end_time, $location, $video_link, $cover_image);
         
         if ($stmt->execute()) {
             $event_id = $conn->insert_id;
@@ -146,6 +147,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="form-group">
                             <label for="location">Location</label>
                             <input type="text" id="location" name="location" placeholder="e.g., LAKUM Hall 1">
+                        </div>
+                        
+                        <div class="form-group video-link-group">
+                            <label for="video_link">
+                                <i class="ri-video-line"></i> Video Link (Optional)
+                            </label>
+                            <div class="video-input-wrapper">
+                                <input type="url" id="video_link" name="video_link" placeholder="Paste YouTube or Vimeo link here..." class="video-input">
+                                <div class="video-platforms">
+                                    <span class="platform-badge youtube"><i class="ri-youtube-fill"></i> YouTube</span>
+                                    <span class="platform-badge vimeo"><i class="ri-vimeo-fill"></i> Vimeo</span>
+                                </div>
+                            </div>
+                            <small class="video-help-text">
+                                <i class="ri-information-line"></i> Only YouTube and Vimeo links are supported
+                            </small>
+                            <div class="video-validation-msg" id="videoValidation"></div>
                         </div>
                     </div>
                     

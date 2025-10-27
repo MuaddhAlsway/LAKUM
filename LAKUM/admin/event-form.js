@@ -256,3 +256,69 @@ if (descriptionTextarea && charCount) {
 if (eventDate && eventDate.value) {
     validateDates();
 }
+
+// Video Link Validation
+const videoInput = document.getElementById('video_link');
+const videoValidation = document.getElementById('videoValidation');
+
+if (videoInput && videoValidation) {
+    videoInput.addEventListener('input', validateVideoLink);
+    videoInput.addEventListener('blur', validateVideoLink);
+    
+    // Validate on page load if there's a value
+    if (videoInput.value) {
+        validateVideoLink();
+    }
+}
+
+function validateVideoLink() {
+    const url = videoInput.value.trim();
+    
+    // If empty, clear validation
+    if (!url) {
+        videoInput.classList.remove('valid', 'invalid');
+        videoValidation.className = 'video-validation-msg';
+        videoValidation.innerHTML = '';
+        return true;
+    }
+    
+    // Check for YouTube
+    const youtubeRegex = /^(https?:\/\/)?(www\.)?(youtube\.com\/(watch\?v=|embed\/)|youtu\.be\/)[\w-]+/;
+    
+    // Check for Vimeo
+    const vimeoRegex = /^(https?:\/\/)?(www\.)?vimeo\.com\/\d+/;
+    
+    if (youtubeRegex.test(url)) {
+        videoInput.classList.remove('invalid');
+        videoInput.classList.add('valid');
+        videoValidation.className = 'video-validation-msg success';
+        videoValidation.innerHTML = '<i class="ri-checkbox-circle-line"></i> Valid YouTube link';
+        return true;
+    } else if (vimeoRegex.test(url)) {
+        videoInput.classList.remove('invalid');
+        videoInput.classList.add('valid');
+        videoValidation.className = 'video-validation-msg success';
+        videoValidation.innerHTML = '<i class="ri-checkbox-circle-line"></i> Valid Vimeo link';
+        return true;
+    } else {
+        videoInput.classList.remove('valid');
+        videoInput.classList.add('invalid');
+        videoValidation.className = 'video-validation-msg error';
+        videoValidation.innerHTML = '<i class="ri-error-warning-line"></i> Only YouTube and Vimeo links are allowed';
+        return false;
+    }
+}
+
+// Update form submission to validate video
+if (eventForm) {
+    const originalSubmitHandler = eventForm.onsubmit;
+    eventForm.addEventListener('submit', (e) => {
+        // Check video validation
+        if (videoInput && videoInput.value && !validateVideoLink()) {
+            e.preventDefault();
+            alert('Please enter a valid YouTube or Vimeo link, or leave the field empty');
+            videoInput.focus();
+            return false;
+        }
+    });
+}

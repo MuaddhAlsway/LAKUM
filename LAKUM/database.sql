@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS events (
     end_date DATE,
     end_time VARCHAR(50),
     location VARCHAR(255),
+    video_link VARCHAR(500),
     cover_image VARCHAR(255),
     status ENUM('upcoming', 'past') DEFAULT 'upcoming',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -62,10 +63,10 @@ INSERT INTO admin (username, password) VALUES
 ON DUPLICATE KEY UPDATE username=username;
 
 -- Sample events (optional - remove if not needed)
-INSERT INTO events (title, description, event_date, event_time, end_date, end_time, location, cover_image) VALUES
-('Contemporary Art Exhibition', 'Discover the latest works from emerging Saudi artists showcasing contemporary art and design.', '2025-11-15', '17:00', '2025-11-15', '22:00', 'LAKUM Hall 1', 'assest/img-3.JPG'),
-('Photography Workshop', 'Learn professional photography techniques from renowned photographers in an interactive workshop.', '2025-11-20', '14:00', '2025-11-20', '18:00', 'LAKUM Hall 2', 'assest/img-3.JPG'),
-('Cultural Heritage Exhibition', 'Explore the rich cultural heritage of Saudi Arabia through art, artifacts, and multimedia presentations.', '2025-12-01', '10:00', '2025-12-05', '20:00', 'LAKUM Hall 1', 'assest/img-3.JPG');
+INSERT INTO events (title, description, event_date, event_time, end_date, end_time, location, video_link, cover_image) VALUES
+('Contemporary Art Exhibition', 'Discover the latest works from emerging Saudi artists showcasing contemporary art and design.', '2025-11-15', '17:00', '2025-11-15', '22:00', 'LAKUM Hall 1', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'assest/img-3.JPG'),
+('Photography Workshop', 'Learn professional photography techniques from renowned photographers in an interactive workshop.', '2025-11-20', '14:00', '2025-11-20', '18:00', 'LAKUM Hall 2', 'https://vimeo.com/148751763', 'assest/img-3.JPG'),
+('Cultural Heritage Exhibition', 'Explore the rich cultural heritage of Saudi Arabia through art, artifacts, and multimedia presentations.', '2025-12-01', '10:00', '2025-12-05', '20:00', 'LAKUM Hall 1', NULL, 'assest/img-3.JPG');
 
 -- =====================================================
 -- Verification Queries
